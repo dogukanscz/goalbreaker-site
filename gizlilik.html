@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Goalbreaker Gizlilik Politikası</title>
-<meta name="description" content="Goalbreaker mobil oyununun gizlilik politikası: hiçbir veri toplanmaz, paylaşılmaz, satılmaz.">
+<meta name="description" content="Goalbreaker mobil oyununun gizlilik politikası: cihazınızda kalanlar, çökme raporu ve anonim kullanım istatistiği olarak gönderilenler ve nasıl kapatılacağı.">
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -14,41 +14,66 @@
 </div></header>
 <main>
   <h1>Gizlilik Politikası</h1>
-  <p class="meta">Goalbreaker: Futbol Bulmaca · Yürürlük tarihi 9 Eylül 2026</p>
+  <p class="meta">Goalbreaker: Futbol Bulmaca · Yürürlük tarihi EFFECTIVE_DATE</p>
 
-  <div class="card"><strong>Tek cümleyle:</strong> Goalbreaker hiçbir kişisel veri toplamaz, saklamaz, paylaşmaz ya da satmaz. Oyun tamamen cihazınızda çalışır ve internet bağlantısı gerektirmez.</div>
+  <div class="card"><strong>Kısaca:</strong> Goalbreaker'da hesap ve bize ait bir sunucu yoktur. İlerlemeniz cihazınızda kalır. Oyun, hataları düzeltmemize ve bölümleri dengelememize yardımcı olan anonim çökme raporları ve oynanış istatistikleri gönderebilir; bunu Ayarlar'dan istediğiniz zaman kapatabilirsiniz. Adınızı, e-postanızı, kişilerinizi, fotoğraflarınızı ya da hassas konumunuzu asla toplamayız.</div>
 
   <h2>1. Biz kimiz</h2>
-  <p>Goalbreaker, geliştiricisi (Doğukan Saçmaözü, "biz") tarafından yayımlanır. İletişim bilgileri <a href="support.html">destek sayfasındadır</a>.</p>
+  <p>Goalbreaker, geliştiricisi (Doğukan Saçmaözü, "biz") tarafından yayımlanır. İletişim: <a href="mailto:dogukangamesdev@gmail.com">dogukangamesdev@gmail.com</a>; ayrıca <a href="support.html">destek sayfasına</a> bakın.</p>
 
-  <h2>2. Toplamadığımız veriler</h2>
-  <p>Oyunda hesap sistemi ve sunucu yoktur. Ad, e-posta, telefon numarası, kişiler, fotoğraflar, konum, cihaz kimlikleri, reklam kimlikleri ya da kullanım analitiği toplanmaz. Oyun kendi başına hiçbir ağ isteği yapmaz ve internet izni istemez.</p>
-
-  <h2>3. Yalnızca cihazınızda saklanan veriler</h2>
-  <p>İlerlemenizi hatırlamak için oyun, cihazınızdaki kendi depolama alanında az miktarda bilgi tutar:</p>
+  <h2>2. Cihazınızda kalan veriler</h2>
+  <p>Kaldığınız yeri hatırlamak için oyun, cihazınızdaki kendi depolama alanında küçük bir kayıt dosyası tutar:</p>
   <table>
     <tr><th>Ne</th><th>Neden</th></tr>
     <tr><td>Bölüm ilerlemesi, yıldızlar ve açılan bölümler</td><td>Kaldığınız yerden devam edebilmeniz için</td></tr>
-    <tr><td>Oyun içi altın ve elmaslar, sahip olunan formalar ve toplar</td><td>Oyunun kendi ekonomisi (oynayarak kazanılır, satın alınmaz)</td></tr>
-    <tr><td>Ayarlar: ses, müzik, titreşim, grafik kalitesi, dil</td><td>Tercihlerinizi korumak için</td></tr>
-    <tr><td>Oynanan bölüm ve kazanılan kupa gibi yerel sayaçlar</td><td>Kupaları vermek için; cihazdan asla çıkmaz</td></tr>
+    <tr><td>Oyun içi altın ve elmaslar, sahip olunan formalar, toplar ve efektler</td><td>Oyunun kendi ekonomisi</td></tr>
+    <tr><td>Ayarlar: ses, müzik, titreşim, grafik, dil, kullanım verisi tercihi</td><td>Tercihlerinizi korumak için</td></tr>
+    <tr><td>Oynanan bölüm ve kazanılan kupa gibi yerel sayaçlar</td><td>Kupaları vermek ve günlük ödülleri düzenlemek için</td></tr>
   </table>
-  <p>Bu bilgiler oyun aracılığıyla cihazınızdan asla çıkmaz. Uygulamayı silmek bu bilgileri kaldırır. İşletim sisteminiz, cihaz ayarlarınıza göre uygulama verisini kendi cihaz yedeğine dahil edebilir (örneğin Android'in Google hesabınıza yedeklemesi); bu yedek bizim değil, sizin ve platform sağlayıcınızın denetimindedir.</p>
+  <p>Bu dosya bize gönderilmez. Uygulamayı silmek dosyayı kaldırır; <em>Ayarlar → İlerlemeyi Sıfırla</em> ilerlemeyi siler, tercihlerinizi korur. İşletim sisteminiz, cihaz ayarlarınıza göre uygulama verisini kendi cihaz yedeğine dahil edebilir (Android'in Google hesabınıza yedeklemesi, Apple'ın iCloud yedeği); bu yedek bizim değil, sizin ve platform sağlayıcınızın denetimindedir.</p>
+
+  <h2>3. Oyundan gönderilen veriler</h2>
+  <p>Ayarlar'daki <strong>Kullanım verisi paylaş</strong> seçeneği açıkken ve cihaz çevrimiçiyken oyun, bizim adımıza işleyen Google Firebase hizmetine iki tür anonim veri gönderir:</p>
+  <table>
+    <tr><th>Ne</th><th>Neden</th><th>Saklama</th></tr>
+    <tr><td><strong>Çökme raporları</strong> (Firebase Crashlytics): çökme anında oyunun ne yaptığı, uygulama sürümü, cihaz modeli, işletim sistemi sürümü, boş bellek ve depolama alanı ve rastgele bir kurulum kimliği.</td><td>Çökmeleri yaşandıkları cihazlarda bulup düzeltmek için</td><td>90 gün</td></tr>
+    <tr><td><strong>Oynanış istatistikleri</strong> (Firebase Analytics): hangi bölümlerin başlatıldığı, kaç yıldızla kazanıldığı ya da kaybedildiği, alınan günlük ödüller, kullanılan ekranlar, oturum süresi, uygulama sürümü, cihaz modeli, işletim sistemi, dil ve IP adresinizden türetilen ülke. İstatistik için reklam kimliği toplanmaz.</td><td>Bölüm zorluğunu ve oyun içi ekonomiyi dengelemek için</td><td>Cihaz düzeyinde veri iki ay; toplu raporlar daha uzun</td></tr>
+  </table>
+  <p>Bu verilerin hiçbiri adınızı, e-posta adresinizi ya da yazdığınız bir şeyi içermez. Kurulum kimliği rastgeledir ve sizinle ilişkilendirilmez. Seçeneği kapatmak toplamayı hemen durdurur; gönderilmiş veri yukarıdaki sürelerde ya da bize yazarsanız daha erken silinir (8. bölüm).</p>
+
+  <!-- 8A: ödüllü reklam yayına girince açılır; özet kartı ve İngilizce sayfa birlikte güncellenir.
+  <h2>3a. Reklam</h2>
+  <p>Oyun ödüllü video reklamları yalnız siz izlemeyi seçtiğinizde gösterir (örneğin ek top ya da ipucu için). Reklamlar Google AdMob ve reklam ortakları tarafından sunulur; izin verdiğiniz yerde cihazınızın reklam kimliğini, IP adresinizi, ondan türetilen yaklaşık konumu, cihaz bilgisini ve reklamla nasıl etkileştiğinizi alırlar. Avrupa Ekonomik Alanı ve Birleşik Krallık'ta oyun herhangi bir reklamdan önce rızanızı sorar ve Ayarlar → Gizlilik seçenekleri altında sonradan değiştirmenize izin verir. iOS'ta oyun sizi izlemek için izin istemez ve kişiselleştirilmemiş reklam gösterir.</p>
+  -->
+  <!-- 8B: uygulama içi satın alma yayına girince açılır.
+  <h2>3b. Satın almalar</h2>
+  <p>İsteğe bağlı satın almalar tamamen Google Play ya da App Store tarafından yürütülür. Biz yalnız alınan ürünü ve mağazanın verdiği işlem kimliğini alırız; oyun bunu satın almanızı geri yüklemek için cihazınızda tutar. Ödeme bilgilerinizi hiçbir zaman görmeyiz.</p>
+  -->
 
   <h2>4. İzinler</h2>
-  <p>Android uygulaması tek bir izin ister: <strong>titreşim</strong>; vuruşlarda, gollerde ve düğmelerde dokunsal geri bildirim için kullanılır ve oyun ayarlarından kapatılabilir. Başka izin istenmez.</p>
+  <p>Android uygulaması <strong>titreşim</strong> (dokunsal geri bildirim, Ayarlar'dan kapatılabilir) ve yukarıdaki çökme raporları ile istatistikler için <strong>internet erişimi</strong> ister. Oyun tamamen çevrimdışı oynanır; hiçbir bölümü bağlantı gerektirmez.</p>
 
-  <h2>5. Reklam, satın alma ve üçüncü taraflar</h2>
-  <p>1.0 sürümünde reklam, uygulama içi satın alma ve üçüncü taraf yazılım geliştirme kiti (analitik, çökme raporlama, reklam ağı) yoktur. İleride bir sürüm bunlardan birini eklerse önce bu politika güncellenir ve değişiklik mağaza sayfasında belirtilir.</p>
+  <h2>5. Üçüncü taraflar</h2>
+  <p>3. bölümdeki verileri bizim adımıza Google (Firebase Crashlytics ve Firebase Analytics) işler. Bu işleme için Google'ın kendi gizlilik politikası geçerlidir: <a href="https://policies.google.com/privacy">policies.google.com/privacy</a>. Başka hiçbir üçüncü taraf hizmet oyundan veri almaz. Veri satmayız.</p>
 
   <h2>6. Çocuklar</h2>
-  <p>Oyun genel kitleye uygundur ve mağazalarda 13 yaş ve üstü olarak derecelendirilmiştir. Kimseden veri toplanmadığı için çocuklardan da veri toplanmaz.</p>
+  <p>Goalbreaker 13 yaş ve üzeri oyuncular içindir. 13 yaşından küçük çocuklardan bilerek veri toplamayız; bir çocuğun oyunu kullandığını düşünüyor ve o cihaza bağlı verinin silinmesini istiyorsanız bize yazın.</p>
 
-  <h2>7. Politikadaki değişiklikler</h2>
-  <p>Politika değişirse yeni sürüm, yeni yürürlük tarihiyle bu sayfada yayımlanır.</p>
+  <h2>7. Seçenekleriniz</h2>
+  <ul>
+    <li><strong>Veri paylaşımını kapatmak:</strong> Ayarlar → Veri ve Gizlilik → Kullanım verisi paylaş.</li>
+    <li><strong>Sıfırlamak:</strong> Ayarlar → İlerlemeyi Sıfırla bu cihazdaki ilerlemeyi siler.</li>
+    <li><strong>Her şeyi silmek:</strong> uygulamayı kaldırın; ardından çökme ve istatistik verisinin silinmesini bizden isteyin (8. bölüm).</li>
+  </ul>
 
-  <h2>8. İletişim</h2>
-  <p>Bu politikayla ilgili sorular için <a href="support.html">destek sayfasına</a> bakın.</p>
+  <h2>8. İletişim ve silme istekleri</h2>
+  <p><a href="mailto:dogukangamesdev@gmail.com">dogukangamesdev@gmail.com</a> adresine yazın. Oyunda hesap olmadığından, eşleşen kurulum kimliğini bulabilmemiz için yaklaşık ne zaman ve hangi cihaz modelinde oynadığınızı belirtin. Bize gönderdiğiniz destek e-postaları yalnız size yanıt vermek için saklanır.</p>
+
+  <h2>9. Bu web sitesi</h2>
+  <p>Bu site GitHub Pages üzerinde barındırılır. GitHub, <a href="https://docs.github.com/en/pages/getting-started-with-github-pages/what-is-github-pages#data-collection">belgelerinde</a> açıklandığı gibi güvenlik amacıyla ziyaretçi IP adreslerini kaydedebilir. Sitenin kendisi çerez kullanmaz ve analitik çalıştırmaz.</p>
+
+  <h2>10. Politikadaki değişiklikler</h2>
+  <p>Politika değişirse yeni sürüm, yeni yürürlük tarihiyle bu sayfada yayımlanır ve değişiklik mağaza sayfasında belirtilir.</p>
 </main>
 <footer>© 2026 Goalbreaker · <a href="privacy.html">English version</a></footer>
 </body>

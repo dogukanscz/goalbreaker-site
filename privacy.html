@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Goalbreaker Privacy Policy</title>
-<meta name="description" content="Privacy policy of the Goalbreaker mobile game: no data is collected, shared or sold.">
+<meta name="description" content="Privacy policy of the Goalbreaker mobile game: what stays on your device, what is sent as crash reports and anonymous usage statistics, and how to turn it off.">
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -14,41 +14,66 @@
 </div></header>
 <main>
   <h1>Privacy Policy</h1>
-  <p class="meta">Goalbreaker: Football Puzzle · Effective 9 September 2026</p>
+  <p class="meta">Goalbreaker: Football Puzzle · Effective EFFECTIVE_DATE</p>
 
-  <div class="card"><strong>In one sentence:</strong> Goalbreaker does not collect, store, share or sell any personal data. The game works entirely on your device and does not need an internet connection.</div>
+  <div class="card"><strong>In short:</strong> Goalbreaker has no account and no server of its own. Your progress stays on your device. The game can send anonymous crash reports and play statistics to help us fix bugs and balance levels; you can turn that off in Settings at any time. We never collect your name, e-mail, contacts, photos or precise location.</div>
 
   <h2>1. Who we are</h2>
-  <p>Goalbreaker is published by its developer (Doğukan Saçmaözü, "we"). Contact details are on the <a href="support.html">support page</a>.</p>
+  <p>Goalbreaker is published by its developer (Doğukan Saçmaözü, "we"). Contact: <a href="mailto:dogukangamesdev@gmail.com">dogukangamesdev@gmail.com</a>, see also the <a href="support.html">support page</a>.</p>
 
-  <h2>2. Data we do not collect</h2>
-  <p>The game has no account system and no server. It does not collect names, email addresses, phone numbers, contacts, photos, location, device identifiers, advertising identifiers, or any usage analytics. It makes no network requests of its own and requests no internet permission.</p>
-
-  <h2>3. Data stored on your device only</h2>
-  <p>To remember your progress the game keeps a small amount of information in the app's own storage on your device:</p>
+  <h2>2. Data that stays on your device</h2>
+  <p>To remember where you are, the game keeps a small save file in the app's own storage on your device:</p>
   <table>
     <tr><th>What</th><th>Why</th></tr>
     <tr><td>Level progress, stars and unlocked chapters</td><td>To continue where you left off</td></tr>
-    <tr><td>In-game coins and gems, owned kits and balls</td><td>The game's own economy (earned by playing, never bought)</td></tr>
-    <tr><td>Settings: sound, music, vibration, graphics quality, language</td><td>To keep your preferences</td></tr>
-    <tr><td>Local counters such as levels played and trophies earned</td><td>To award trophies; these never leave the device</td></tr>
+    <tr><td>In-game coins and gems, owned kits, balls and effects</td><td>The game's own economy</td></tr>
+    <tr><td>Settings: sound, music, vibration, graphics, language, the usage-data choice</td><td>To keep your preferences</td></tr>
+    <tr><td>Local counters such as levels played and trophies earned</td><td>To award trophies and pace daily rewards</td></tr>
   </table>
-  <p>This information never leaves your device through the game. Deleting the app removes it. Your operating system may include the app's data in its own device backup (for example Android's backup to your Google account) according to your device settings; that backup is controlled by you and your platform provider, not by us.</p>
+  <p>This file is not sent to us. Deleting the app removes it; <em>Settings → Reset progress</em> clears the progress and keeps your preferences. Your operating system may include the app's data in its own device backup (Android's backup to your Google account, Apple's iCloud backup) according to your device settings; that backup is controlled by you and your platform provider, not by us.</p>
+
+  <h2>3. Data sent from the game</h2>
+  <p>When the <strong>Share usage data</strong> option in Settings is on and the device is online, the game sends two kinds of anonymous data to Google's Firebase service, which processes it on our behalf:</p>
+  <table>
+    <tr><th>What</th><th>Why</th><th>Kept for</th></tr>
+    <tr><td><strong>Crash reports</strong> (Firebase Crashlytics): what the game was doing when it crashed, the app version, device model, operating system version, free memory and storage, and a random installation identifier.</td><td>To find and fix crashes on the devices they happen on</td><td>90 days</td></tr>
+    <tr><td><strong>Play statistics</strong> (Firebase Analytics): which levels are started, won or lost and with how many stars, daily rewards claimed, which screens are used, session length, the app version, device model, operating system, language, and the country derived from your IP address. Advertising identifiers are not collected for statistics.</td><td>To balance level difficulty and the in-game economy</td><td>Two months for per-device data; aggregated reports longer</td></tr>
+  </table>
+  <p>Neither kind of data contains your name, e-mail address or anything you typed. The installation identifier is random and is not linked to you. Turning the option off stops collection at once; the data already sent is deleted by Google on the schedule above, or sooner if you ask us (see section 8).</p>
+
+  <!-- 8A: enable when rewarded ads ship, and update the summary card and the Turkish page with it.
+  <h2>3a. Advertising</h2>
+  <p>The game shows rewarded video ads only when you choose to watch one (for example for extra balls or a hint). Ads are served by Google AdMob and its advertising partners, which receive your device's advertising identifier where you have allowed it, your IP address, an approximate location derived from it, device information and how you interact with the ad. In the European Economic Area and the United Kingdom the game asks for your consent before any ad and lets you change it later under Settings → Privacy options. On iOS the game does not ask permission to track you and shows non-personalised ads.</p>
+  -->
+  <!-- 8B: enable when in-app purchases ship.
+  <h2>3b. Purchases</h2>
+  <p>Optional purchases are handled entirely by Google Play or the App Store. We receive only the product bought and a store transaction identifier, which the game keeps on your device to restore your purchase; we never see your payment details.</p>
+  -->
 
   <h2>4. Permissions</h2>
-  <p>The Android app asks for one permission: <strong>vibration</strong>, used for haptic feedback on kicks, goals and buttons. It can be turned off in the game's settings. No other permission is requested.</p>
+  <p>The Android app asks for <strong>vibration</strong> (haptic feedback, can be turned off in Settings) and <strong>internet access</strong> (for the crash reports and statistics above). The game plays fully offline; nothing in it requires a connection.</p>
 
-  <h2>5. Advertising, purchases and third parties</h2>
-  <p>Version 1.0 contains no advertising, no in-app purchases and no third-party software development kits (no analytics, no crash reporting, no ad networks). If a future version adds any of these, this policy will be updated first and the change will be described in the store listing.</p>
+  <h2>5. Third parties</h2>
+  <p>Google (Firebase Crashlytics and Firebase Analytics) processes the data in section 3 for us. Google's own privacy policy applies to that processing: <a href="https://policies.google.com/privacy">policies.google.com/privacy</a>. No other third-party service receives data from the game. We do not sell data.</p>
 
   <h2>6. Children</h2>
-  <p>The game is suitable for a general audience and is rated for ages 13 and up on the stores. Because no data is collected from anyone, no data is collected from children either.</p>
+  <p>Goalbreaker is intended for players aged 13 and over. We do not knowingly collect data from children under 13; if you believe a child has used the game and want the data connected with that device deleted, contact us.</p>
 
-  <h2>7. Changes to this policy</h2>
-  <p>If the policy changes, the new version will be published on this page with a new effective date.</p>
+  <h2>7. Your choices</h2>
+  <ul>
+    <li><strong>Turn data sharing off:</strong> Settings → Data &amp; privacy → Share usage data.</li>
+    <li><strong>Reset:</strong> Settings → Reset progress clears the progress on this device.</li>
+    <li><strong>Delete everything:</strong> uninstall the app; then ask us to delete the crash and statistics data (section 8).</li>
+  </ul>
 
-  <h2>8. Contact</h2>
-  <p>Questions about this policy: see the <a href="support.html">support page</a>.</p>
+  <h2>8. Contact and deletion requests</h2>
+  <p>Write to <a href="mailto:dogukangamesdev@gmail.com">dogukangamesdev@gmail.com</a>. Because the game has no accounts, tell us roughly when and on which device model you played so we can find the matching installation identifier. Support e-mails you send us are kept only for answering you.</p>
+
+  <h2>9. This website</h2>
+  <p>This site is hosted on GitHub Pages. GitHub may log visitors' IP addresses for security, as described in <a href="https://docs.github.com/en/pages/getting-started-with-github-pages/what-is-github-pages#data-collection">GitHub's documentation</a>. The site itself sets no cookies and runs no analytics.</p>
+
+  <h2>10. Changes to this policy</h2>
+  <p>If the policy changes, the new version will be published on this page with a new effective date, and the change will be described in the store listing.</p>
 </main>
 <footer>© 2026 Goalbreaker · <a href="gizlilik.html">Türkçe sürüm</a></footer>
 </body>
