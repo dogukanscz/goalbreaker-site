@@ -7,6 +7,6 @@ Static pages for the Goalbreaker mobile game, served by GitHub Pages:
 - `support.html` — support and contact
 - `index.html` — landing page
 
-Plain HTML and CSS, no build step. Edit a page and push to `main`.
+Plain HTML and CSS, no build step (Nunito from Google Fonts, everything else inline). Edit a page and push to `main`. `app-ads.txt` at the root is AdMob's publisher record; `assets/shot-title.jpg` is a phone capture cropped to hide the development watermark.
 
-The `7b0-privacy` branch holds the policy version for the first build that sends crash reports and usage statistics; replace `EFFECTIVE_DATE` in both privacy pages with the publication date when merging.
+The policy pages carry their effective date in the text; update it whenever the wording changes.
