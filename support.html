@@ -1,75 +1,278 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-<head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Goalbreaker support</title>
-<meta name="description" content="Support and contact for the Goalbreaker mobile game by Talvero Games.">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;700;800;900&display=swap">
-<link rel="icon" href="assets/icon.png" type="image/png">
-<link rel="stylesheet" href="style.css">
-</head>
-<body>
-<header class="top"><div class="wrap">
-  <a class="brand" href="index.html"><img src="assets/logo-goalbreaker.png" alt="Goalbreaker"></a>
-  <nav>
-    <a href="support.html" aria-current="page">Support</a>
-    <a href="privacy.html">Privacy</a>
-    <a href="gizlilik.html" lang="tr">Gizlilik</a>
-  </nav>
-</div></header>
-
-<main>
-  <h1>Support</h1>
-  <p class="date">Write to <a href="mailto:dogukangamesdev@gmail.com">dogukangamesdev@gmail.com</a>. Tell us your phone model, its system version and the level you were playing, and we can usually answer the same day.</p>
-
-  <h2>Common questions</h2>
-
-  <h3>Does the game need an internet connection?</h3>
-  <p>Levels and local progress work offline. Ads, external support pages and optional reporting need a connection. Firebase usage sharing is off until you enable it in Settings. AdMob has its own privacy flow and may preload an ad once requests are allowed, even if you do not watch it. See the privacy policy for details.</p>
-
-  <h3>Are there ads or purchases?</h3>
-  <p>Ads play only when you choose to watch one, for an extra ball, a special kick, a hint, a bonus star, a coin double or a kit. There are no ads between levels. This version has no purchases.</p>
-
-  <h3>How do I reset my progress?</h3>
-  <p>Settings, then Reset progress. It cannot be undone; your settings stay.</p>
-
-  <h3>I reinstalled the game and lost my progress.</h3>
-  <p>Progress lives on your phone. Android and iOS can bring it back from your own device backup if that backup was on; the game has no account or cloud of its own.</p>
-
-  <h3>How do I delete my data?</h3>
-  <p>Uninstall the app to remove everything on the phone. E-mail us to have crash and statistics data deleted from our tools.</p>
-
-  <h3>The game runs slowly.</h3>
-  <p>Settings, then Graphics: pick Low or Auto.</p>
-
-  <h2 lang="tr">Destek</h2>
-  <p lang="tr"><a href="mailto:dogukangamesdev@gmail.com">dogukangamesdev@gmail.com</a> adresine yazın; telefon modelinizi, sistem sürümünü ve oynadığınız bölümü ekleyin.</p>
-
-  <h3 lang="tr">Oyun internet gerektiriyor mu?</h3>
-  <p lang="tr">Bölümler ve yerel ilerleme çevrimdışı çalışır. Reklam, harici destek sayfaları ve isteğe bağlı raporlama bağlantı gerektirir. Firebase paylaşımı siz Ayarlar'dan açana kadar kapalıdır. AdMob ayrı gizlilik akışını izler; reklam isteklerine izin verilince siz izlemeseniz de reklamı önceden yükleyebilir. Ayrıntılar gizlilik politikasındadır.</p>
-
-  <h3 lang="tr">Reklam ya da satın alma var mı?</h3>
-  <p lang="tr">Reklam yalnız siz istediğinizde oynar: ek top, özel vuruş, ipucu, ek yıldız, altın ikramiyesi ya da forma için. Bölümler arasında reklam yoktur. Bu sürümde satın alma yok.</p>
-
-  <h3 lang="tr">İlerlemeyi nasıl sıfırlarım?</h3>
-  <p lang="tr">Ayarlar, sonra İlerlemeyi Sıfırla. Geri alınamaz; ayarlarınız kalır.</p>
-
-  <h3 lang="tr">Oyunu yeniden kurdum, ilerlemem gitti.</h3>
-  <p lang="tr">İlerleme telefonunuzda durur. Cihaz yedeğiniz açıksa Android ve iOS onu geri getirebilir; oyunun kendi hesabı ya da bulutu yoktur.</p>
-
-  <h3 lang="tr">Verilerimi nasıl silerim?</h3>
-  <p lang="tr">Telefondaki her şeyi silmek için uygulamayı kaldırın. Çökme ve istatistik verisinin silinmesi için bize yazın.</p>
-
-  <h3 lang="tr">Oyun yavaş.</h3>
-  <p lang="tr">Ayarlar, sonra Grafik: Düşük ya da Otomatik seçin.</p>
-</main>
-
-<footer><div class="wrap">
-  <span><strong>Talvero Games</strong>, Doğukan Saçmaözü</span>
-  <span><a href="mailto:dogukangamesdev@gmail.com">dogukangamesdev@gmail.com</a></span>
-</div></footer>
-</body>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#101f30">
+    <meta name="referrer" content="strict-origin-when-cross-origin">
+    <title>Goalbreaker Support — Talvero Games</title>
+    <meta
+      name="description"
+      content="Get help with Goalbreaker. Find answers about rewards, ads, progress and privacy, or contact the developer to report a bug."
+   >
+    <link
+      rel="canonical"
+      href="https://dogukanscz.github.io/goalbreaker-site/support.html"
+   >
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="Goalbreaker · Talvero Games">
+    <meta property="og:title" content="Goalbreaker Support — Talvero Games">
+    <meta
+      property="og:description"
+      content="Get help with Goalbreaker. Find answers about rewards, ads, progress and privacy, or contact the developer to report a bug."
+   >
+    <meta
+      property="og:url"
+      content="https://dogukanscz.github.io/goalbreaker-site/support.html"
+   >
+    <meta
+      property="og:image"
+      content="https://dogukanscz.github.io/goalbreaker-site/assets/social-cover.png"
+   >
+    <meta property="og:image:width" content="1024">
+    <meta property="og:image:height" content="500">
+    <meta
+      property="og:image:alt"
+      content="Goalbreaker: Draw the shot. Break the wall. Score."
+   >
+    <meta name="twitter:card" content="summary_large_image">
+    <link rel="icon" href="assets/icon.png" type="image/png">
+    <link
+      rel="preload"
+      href="assets/fonts/barlow-condensed-800-latin.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin
+   >
+    <link rel="stylesheet" href="style.css?v=20260918">
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Skip to content</a>
+    <header class="site-header">
+      <div class="container header-inner">
+        <a class="brand" href="./" aria-label="Goalbreaker home"
+          ><img
+            src="assets/logo-goalbreaker.png"
+            width="640"
+            height="155"
+            alt="Goalbreaker"
+       ></a>
+        <nav aria-label="Main navigation">
+          <a href="./#game">The game</a>
+          <a href="support.html" aria-current="page">Support</a>
+          <a href="privacy.html">Privacy</a>
+        </nav>
+      </div>
+    </header>
+    <main id="main" class="container support-main">
+      <div class="page-heading">
+        <p class="eyebrow">Player support</p>
+        <h1>Let’s get you<br>back in the game.</h1>
+        <p>
+          Stuck on something? Found a bug? Have an idea for Goalbreaker? We’d
+          like to hear from you.
+        </p>
+      </div>
+      <div class="support-grid">
+        <aside class="contact-card" aria-labelledby="contact-title">
+          <span class="contact-symbol" aria-hidden="true">↗</span>
+          <h2 id="contact-title">Talk to the developer.</h2>
+          <p>No ticket maze. Your message goes directly to Talvero Games.</p>
+          <a
+            class="contact-email"
+            href="mailto:dogukangamesdev@gmail.com?subject=Goalbreaker%20support"
+            >dogukangamesdev@gmail.com</a
+          ><a
+            class="button button-gold"
+            href="mailto:dogukangamesdev@gmail.com?subject=Goalbreaker%20support"
+            >Email support <span aria-hidden="true">↗</span></a
+          >
+          <p class="small-note">
+            Opens your email app. You can also copy the address above.
+          </p>
+        </aside>
+        <section class="report-guide" aria-labelledby="report-title">
+          <p class="eyebrow">Help us find the problem</p>
+          <h2 id="report-title">A few details go a long way.</h2>
+          <ul class="report-list">
+            <li>
+              <span aria-hidden="true">01</span>
+              <div>
+                <strong>Your device &amp; game version</strong>
+                <p>
+                  Phone model, Android or iOS version, and the game version
+                  shown in Settings.
+                </p>
+              </div>
+            </li>
+            <li>
+              <span aria-hidden="true">02</span>
+              <div>
+                <strong>What happened</strong>
+                <p>
+                  The level or screen, what you expected, and the steps that led
+                  to the issue.
+                </p>
+              </div>
+            </li>
+            <li>
+              <span aria-hidden="true">03</span>
+              <div>
+                <strong>A screenshot, if helpful</strong>
+                <p>
+                  Include an error message or a short recording. Leave out
+                  personal information.
+                </p>
+              </div>
+            </li>
+          </ul>
+        </section>
+      </div>
+      <section class="faq-section" aria-labelledby="faq-title">
+        <div class="section-heading">
+          <p class="eyebrow">A quick assist</p>
+          <h2 id="faq-title">Common questions.</h2>
+        </div>
+        <div class="faq-list">
+          <details>
+            <summary>Can I play offline?</summary>
+            <div class="faq-answer">
+              <p>
+                Yes. Levels, unlocks and local progress work offline. Rewarded
+                ads, external support pages and optional crash and usage
+                reporting need an internet connection.
+              </p>
+            </div>
+          </details>
+          <details>
+            <summary>Are there ads or in-app purchases?</summary>
+            <div class="faq-answer">
+              <p>
+                The current version has no in-app purchases and no ads between
+                levels. You can choose to watch a rewarded video for an extra
+                boost or an in-game reward. Advertising data may be processed
+                when the ad service loads an ad, before you watch it. See the
+                <a href="privacy.html#advertising"
+                  >advertising section of our privacy policy</a
+                >.
+              </p>
+            </div>
+          </details>
+          <details>
+            <summary>Why is a rewarded ad unavailable?</summary>
+            <div class="faq-answer">
+              <p>
+                Check your connection and try again a little later. Availability
+                depends on your region, privacy choices and the advertising
+                service. You can keep playing levels while an ad is unavailable.
+              </p>
+            </div>
+          </details>
+          <details>
+            <summary>I watched an ad but did not receive the reward.</summary>
+            <div class="faq-answer">
+              <p>
+                Wait for the ad to finish and return to the game. If the reward
+                still does not appear, contact us with the reward you expected,
+                the approximate time and time zone, your phone model and game
+                version. A screenshot can help. Please avoid resetting or
+                reinstalling the game while we investigate, as this can remove
+                local progress.
+              </p>
+            </div>
+          </details>
+          <details>
+            <summary>Where is my progress saved?</summary>
+            <div class="faq-answer">
+              <p>
+                Your progress is stored on your device. Goalbreaker has no
+                player account or cloud-save service of its own, and does not
+                sync progress between devices. Your operating system may back up
+                app data depending on your settings, but restoration is not
+                guaranteed. Contact us before reinstalling if you are trying to
+                resolve a problem.
+              </p>
+            </div>
+          </details>
+          <details>
+            <summary>How do I reset my progress?</summary>
+            <div class="faq-answer">
+              <p>
+                Open <strong>Settings → Reset progress</strong> and confirm.
+                This clears your local game progress, including levels, coins,
+                gems and unlocked items. This action cannot be undone. It does
+                not delete reports already sent to third-party services; see
+                <a href="privacy.html#choices">your privacy choices</a> for
+                those.
+              </p>
+            </div>
+          </details>
+          <details>
+            <summary>The game feels slow or my phone gets warm.</summary>
+            <div class="faq-answer">
+              <p>
+                Try <strong>Settings → Graphics → Low</strong> or
+                <strong>Auto</strong>. Close other demanding apps and let the
+                phone cool down if needed. If the problem continues, send us
+                your phone model, operating system version, game version and the
+                level where it happens.
+              </p>
+            </div>
+          </details>
+          <details>
+            <summary>
+              How do I change privacy choices or request deletion?
+            </summary>
+            <div class="faq-answer">
+              <p>
+                Optional crash reports and play statistics are off by default.
+                You can change
+                <strong
+                  >Settings → Data &amp; privacy → Share usage data</strong
+                >
+                at any time. Advertising choices are separate;
+                <strong>Ad privacy options</strong> appears in Settings when
+                required by the advertising consent service. For access or
+                deletion requests, email us with the subject “Goalbreaker
+                privacy request”. Read
+                <a href="privacy.html#choices"
+                  >your choices and deletion options</a
+                >
+                before removing the app.
+              </p>
+            </div>
+          </details>
+        </div>
+      </section>
+      <div class="support-privacy">
+        <div>
+          <h2>Looking for privacy information?</h2>
+          <p>
+            Data collection, advertising choices and deletion requests,
+            explained in one place.
+          </p>
+        </div>
+        <a class="text-link" href="privacy.html"
+          >Read the privacy policy <span aria-hidden="true">↗</span></a
+        >
+      </div>
+    </main>
+    <footer class="site-footer">
+      <div class="container footer-top">
+        <div>
+          <a class="studio" href="./">TALVERO<span>GAMES</span></a>
+          <p>Small studio. Big love for play.</p>
+        </div>
+        <nav aria-label="Footer navigation">
+          <a href="./">The game</a
+          ><a href="support.html">Support &amp; contact</a
+          ><a href="privacy.html">Privacy policy</a>
+        </nav>
+      </div>
+      <div class="container footer-bottom">
+        <p>© 2026 Talvero Games · Doğukan Saçmaözü</p>
+        <a href="mailto:dogukangamesdev@gmail.com">dogukangamesdev@gmail.com</a>
+      </div>
+    </footer>
+  </body>
 </html>
