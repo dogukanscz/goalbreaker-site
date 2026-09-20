@@ -26,6 +26,14 @@ The game introduction lives on one landing page. Privacy and support have separa
 
 ## Content and privacy facts
 
+The 20 September 2026 update describes version 1.0.3's separate first-launch
+analytics/crash choices, preserved choices from earlier releases, added gameplay
+metrics, the Crashlytics restart/local-report limitation, and optional Google
+Play updates. The support FAQ explains that users of 1.0.2 and earlier first
+update through Play. Advertising privacy remains independent. Implementation
+reference: the game repository's `docs/PRIVACY_METRICS_UPDATES.md` and
+`docs/PRIVACY_POLICY_RELEASE_COPY.md`.
+
 The 18 September 2026 copy was checked against the Unity project's `docs/DATA_INVENTORY.md`, `GameSettings`, `FirebaseAnalyticsService`, `AdMobAdService`, `AdConsent`, `SaveService` and English Settings labels. The first release has no IAP, no player accounts and no game-managed cloud save. Optional Firebase sharing is off by default. Advertising processing is separate and can begin while preloading, before a player watches an optional rewarded video.
 
 Do not promise automatic recovery of progress, complete anonymity, no data processing before an ad is watched, or deletion of all provider data merely by uninstalling. The Analytics property's actual retention setting still needs verification in the service console; the policy deliberately does not claim the unconfirmed two-month target is configured. AdMob consent delivery and Play Data safety declarations require their own checks and are not certified by this website update.
@@ -36,6 +44,8 @@ Provider and policy references reviewed for the refresh:
 - [AdMob data disclosure](https://developers.google.com/admob/unity/privacy/play-data-disclosure)
 - [AdMob consent integration](https://developers.google.com/admob/unity/privacy)
 - [Firebase privacy and security](https://firebase.google.com/support/privacy)
+- [Crashlytics opt-in reporting for Unity](https://firebase.google.com/docs/crashlytics/unity/customize-crash-reports#enable-opt-in-reporting)
+- [Google Play update data safety](https://developer.android.com/guide/playcore/in-app-updates#data-safety)
 - [European Commission privacy rights](https://commission.europa.eu/law/law-topic/data-protection/information-individuals_en)
 - [California privacy rights](https://oag.ca.gov/privacy/ccpa)
 - [GitHub Pages data collection](https://docs.github.com/en/pages/getting-started-with-github-pages/what-is-github-pages#data-collection)
@@ -48,6 +58,21 @@ Provider and policy references reviewed for the refresh:
 - `celebration.webp` is `tools/out/level_review/2026-09-14/new_50_baseline/A20_trace_end.png`.
 - WebP captures are resized/compressed exports of real game captures, with no invented gameplay. Original assets remain intact in the game repository. The older `shot-title.jpg` is retained for existing links/history but is no longer displayed.
 - Barlow Condensed (800) and Nunito Sans (variable weight) are served locally as Latin WOFF2 subsets from Google Fonts. Their SIL Open Font License files are included under `assets/fonts/`.
+
+## Verification — 20 September 2026 privacy update
+
+- All five HTML documents pass the existing recommended HTML validation.
+- All three pages at 320, 390, 768, 1024 and 1440 CSS pixels: no horizontal
+  overflow or missing images. Six axe WCAG A/AA scans report zero violations.
+- Eight existing navigation/keyboard/no-JavaScript checks pass. The new update
+  anchor and expanded privacy/update FAQs were additionally exercised; their
+  text also fits at 320 px. Mobile policy/FAQ screenshots were reviewed.
+- All 82 local HTML resource/link references and fragments resolve; the browser
+  recorded no page errors, failed resources or external asset requests.
+- Wording was checked against the implemented 1.0.3 flow and Google's current
+  Crashlytics/Play update documentation. No CSS, ad publisher record or tracking
+  change. Evidence lives in the game repository under
+  `tools/out/closed-test-aab-103/2026-09-20_215814/site/`.
 
 ## Verification — 18 September 2026
 

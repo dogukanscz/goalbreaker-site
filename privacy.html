@@ -73,7 +73,7 @@
         <h1>Privacy policy.</h1>
         <p>What the game uses, why it uses it, and the choices you have.</p>
         <p class="effective-date">
-          Effective date: <time datetime="2026-09-18">18 September 2026</time>
+          Effective date: <time datetime="2026-09-20">20 September 2026</time>
         </p>
       </div>
       <section class="privacy-summary" aria-label="Privacy at a glance">
@@ -86,7 +86,8 @@
           <span class="summary-mark" aria-hidden="true">02</span
           ><strong>Optional means opt-in.</strong>
           <p>
-            Play statistics and crash reports are off until you enable sharing.
+            Sending play statistics and crash reports is optional. Choose each
+            separately in version 1.0.3 and later.
           </p>
         </div>
         <div>
@@ -113,6 +114,7 @@
               <li>
                 <a href="#advertising">Rewarded ads &amp; advertising privacy</a>
               </li>
+              <li><a href="#updates">Google Play updates</a></li>
               <li><a href="#support-data">When you contact us</a></li>
               <li>
                 <a href="#providers"
@@ -180,22 +182,35 @@
               crash reports
             </h2>
             <p>
-              <strong>Share usage data is off by default.</strong> If you turn
-              it on in <strong>Settings → Data &amp; privacy</strong>, the game
-              uses Google Analytics for Firebase and Firebase Crashlytics to
-              help us improve it.
+              <strong>Gameplay analytics and crash reporting are optional.</strong>
+              From version 1.0.3, new installations ask you to choose, with both
+              options initially off. You can continue playing without enabling
+              either option and change each choice later in
+              <strong>Settings → Data &amp; privacy</strong>. Advertising privacy
+              choices are separate.
             </p>
             <div class="data-detail">
               <h3>Play statistics · Firebase Analytics</h3>
               <p>
-                Information can include level starts and results, attempts,
-                stars, screens viewed, rewards, cosmetic selections, ad reward
-                results, session activity, app version, device and operating
-                system information, language, an app-instance identifier and
-                country derived from an IP address. We use it to understand how
-                the game is played and improve difficulty and rewards. Our
-                Firebase Analytics configuration disables advertising ID
-                collection and advertising personalisation.
+                Information can include level starts and results, shots, stars,
+                time spent in an attempt, retries and continues, use and
+                acquisition of powers, virtual-currency costs, screens viewed,
+                rewards, cosmetic selections, ad reward results, session
+                activity, app version, device and operating system information,
+                language, an app-instance identifier and country derived from an
+                IP address. We use it to understand how the game is played and
+                improve difficulty and rewards. We do not add a player name,
+                email address or account ID. Our Firebase Analytics configuration
+                disables advertising ID collection and denies advertising
+                storage, advertising user data and advertising personalisation
+                for this analytics integration.
+              </p>
+              <p>
+                Gameplay events generated before you enable analytics are not
+                later uploaded by the game. Turning analytics off stops the
+                game’s event uploads, disables analytics collection and resets
+                locally buffered Firebase Analytics data. It does not
+                automatically erase information already received by the service.
               </p>
             </div>
             <div class="data-detail">
@@ -207,13 +222,27 @@
                 the level, language and graphics setting. We use this
                 information to diagnose and fix technical problems.
               </p>
+              <p>
+                Crashlytics can retain crash information on the device while
+                reporting is disabled. If you later enable reporting, locally
+                held crash reports may be sent. Turning reporting off stops the
+                game’s own custom crash logs immediately; the SDK’s automatic
+                reporting opt-out takes full effect on the next app launch.
+                <strong>Restart the game after disabling this option.</strong>
+              </p>
             </div>
             <p>
               These identifiers distinguish installations; this information is
-              not necessarily anonymous. You can turn sharing off at any time.
-              This stops further optional collection and resets local Analytics
-              data, but does not automatically erase information already sent.
-              This choice is separate from advertising privacy choices.
+              not necessarily anonymous. Turning sharing off does not
+              automatically erase information already sent; the retention and
+              privacy-rights sections below still apply.
+            </p>
+            <p>
+              <strong>Versions 1.0.2 and earlier</strong> use a combined
+              <strong>Share usage data</strong> switch for analytics and crash
+              reporting. When upgrading, an existing explicit choice is
+              preserved for both options; you can then change them independently.
+              Resetting game progress does not reset these privacy choices.
             </p>
           </section>
           <section id="advertising">
@@ -251,8 +280,8 @@
               Transparency permission or access IDFA.
             </p>
             <p>
-              Turning off <strong>Share usage data</strong> does not turn off
-              AdMob processing. Read
+              Turning off gameplay analytics or crash reporting does not turn
+              off AdMob processing. Read
               <a href="https://policies.google.com/technologies/partner-sites"
                 >how Google uses information from apps that use its services</a
               >
@@ -263,8 +292,30 @@
               for more about these services and controls.
             </p>
           </section>
+          <section id="updates">
+            <h2><span class="section-index">05</span>Google Play updates</h2>
+            <p>
+              From version 1.0.3 on Android, the game can check Google Play for
+              an eligible update and offer Google’s optional in-app update flow.
+              Play handles availability, downloads and installation. Downloading
+              begins only after your confirmation; installation and restarting
+              require a further choice. You can keep playing or decline an
+              update. Your device’s separate automatic-update settings remain
+              controlled by Google Play.
+            </p>
+            <p>
+              Update requests use device metadata, the application version and
+              the list of installed app modules and asset packs to determine
+              update availability and expected download size. This store
+              functionality is separate from optional Firebase gameplay
+              analytics and advertising choices. See
+              <a href="https://developer.android.com/guide/playcore/in-app-updates#data-safety"
+                >Google’s in-app update data-safety information</a
+              >.
+            </p>
+          </section>
           <section id="support-data">
-            <h2><span class="section-index">05</span>When you contact us</h2>
+            <h2><span class="section-index">06</span>When you contact us</h2>
             <p>
               If you email us, we receive your email address, the name shown by
               your email service, your message and any attachments you choose to
@@ -281,13 +332,14 @@
           </section>
           <section id="providers">
             <h2>
-              <span class="section-index">06</span>Service providers &amp;
+              <span class="section-index">07</span>Service providers &amp;
               international processing
             </h2>
             <p>
               We use Google’s Firebase services for optional analytics and crash
               reporting, Google AdMob and its advertising partners for ads,
-              Gmail for support, and GitHub Pages for this website. Each
+              Google Play for Android updates, Gmail for support, and GitHub
+              Pages for this website. Each
               receives the information needed for the relevant service. Google’s
               advertising partners are described in the consent interface where
               available.
@@ -321,7 +373,7 @@
             </ul>
           </section>
           <section id="retention">
-            <h2><span class="section-index">07</span>Retention &amp; security</h2>
+            <h2><span class="section-index">08</span>Retention &amp; security</h2>
             <p>Different information has different retention periods:</p>
             <ul>
               <li>
@@ -359,18 +411,20 @@
           </section>
           <section id="choices">
             <h2>
-              <span class="section-index">08</span>Your choices &amp; deletion
+              <span class="section-index">09</span>Your choices &amp; deletion
               requests
             </h2>
             <ol class="choice-list">
               <li>
                 <strong>Optional statistics and crash reports</strong>
                 <p>
-                  Turn
-                  <strong
-                    >Settings → Data &amp; privacy → Share usage data</strong
-                  >
-                  on or off. It is off until you enable it.
+                  In version 1.0.3 and later, choose independently in
+                  <strong>Settings → Data &amp; privacy</strong>. New
+                  installations also offer these choices at first launch, with
+                  both options initially off. Restart after disabling crash
+                  reporting so its automatic-reporting opt-out fully takes
+                  effect. Older versions use the combined
+                  <strong>Share usage data</strong> switch.
                 </p>
               </li>
               <li>
@@ -417,7 +471,7 @@
           </section>
           <section id="rights">
             <h2>
-              <span class="section-index">09</span>Regional privacy rights
+              <span class="section-index">10</span>Regional privacy rights
             </h2>
             <p>
               Depending on where you live and which laws apply, you may have
@@ -449,7 +503,7 @@
             </p>
           </section>
           <section id="children">
-            <h2><span class="section-index">10</span>Children’s privacy</h2>
+            <h2><span class="section-index">11</span>Children’s privacy</h2>
             <p>
               Goalbreaker is intended for players aged 13 and over and is not
               directed at children under 13. We do not knowingly collect
@@ -464,7 +518,7 @@
           </section>
           <section id="website">
             <h2>
-              <span class="section-index">11</span>Privacy on this website
+              <span class="section-index">12</span>Privacy on this website
             </h2>
             <p>
               This website uses no analytics scripts, advertising trackers,
@@ -483,7 +537,7 @@
             </p>
           </section>
           <section id="changes">
-            <h2><span class="section-index">12</span>Changes to this policy</h2>
+            <h2><span class="section-index">13</span>Changes to this policy</h2>
             <p>
               We may update this policy when the game, its services or
               applicable requirements change. The current version will remain
