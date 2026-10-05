@@ -5,41 +5,26 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="theme-color" content="#101f30">
     <meta name="referrer" content="strict-origin-when-cross-origin">
-    <title>Goalbreaker — Draw the shot. Break the wall. Score.</title>
+    <title>Talvero Games — Small studio. Big love for play.</title>
     <meta
       name="description"
-      content="A football puzzle by Talvero Games. Draw your shot, bring down the wall and score across 125 levels. Explore the game, get support and manage your privacy."
+      content="Talvero Games is an independent mobile game studio from Türkiye. Meet Goalbreaker, a football puzzle where you draw the shot, break the wall and score."
    >
-    <link
-      rel="canonical"
-      href="https://dogukanscz.github.io/goalbreaker-site/"
-   >
+    <link rel="canonical" href="https://talverogames.com/">
     <meta property="og:type" content="website">
-    <meta property="og:site_name" content="Goalbreaker · Talvero Games">
-    <meta
-      property="og:title"
-      content="Goalbreaker — Draw the shot. Break the wall. Score."
-   >
+    <meta property="og:site_name" content="Talvero Games">
+    <meta property="og:title" content="Talvero Games — Small studio. Big love for play.">
     <meta
       property="og:description"
-      content="A football puzzle by Talvero Games. Draw your shot, bring down the wall and score across 125 levels. Explore the game, get support and manage your privacy."
+      content="An independent mobile game studio from Türkiye. Meet Goalbreaker: draw the shot, break the wall, score."
    >
-    <meta
-      property="og:url"
-      content="https://dogukanscz.github.io/goalbreaker-site/"
-   >
-    <meta
-      property="og:image"
-      content="https://dogukanscz.github.io/goalbreaker-site/assets/social-cover.png"
-   >
-    <meta property="og:image:width" content="1024">
-    <meta property="og:image:height" content="500">
-    <meta
-      property="og:image:alt"
-      content="Goalbreaker: Draw the shot. Break the wall. Score."
-   >
+    <meta property="og:url" content="https://talverogames.com/">
+    <meta property="og:image" content="https://talverogames.com/assets/studio-social.jpg">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:image:alt" content="The Talvero Games logo over a football stadium at dusk">
     <meta name="twitter:card" content="summary_large_image">
-    <link rel="icon" href="assets/icon.png" type="image/png">
+    <link rel="icon" href="assets/talvero-emblem.png" type="image/png">
     <link
       rel="preload"
       href="assets/fonts/barlow-condensed-800-latin.woff2"
@@ -47,202 +32,176 @@
       type="font/woff2"
       crossorigin
    >
-    <link rel="stylesheet" href="style.css?v=20260918">
+    <link rel="stylesheet" href="style.css?v=20261006">
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Organization",
+        "name": "Talvero Games",
+        "url": "https://talverogames.com/",
+        "logo": "https://talverogames.com/assets/talvero-mark.png",
+        "email": "dogukangamesdev@gmail.com",
+        "founder": { "@type": "Person", "name": "Doğukan Saçmaözü" },
+        "sameAs": ["https://www.instagram.com/talverogames/"]
+      }
+    </script>
   </head>
   <body>
     <a class="skip-link" href="#main">Skip to content</a>
     <header class="site-header">
       <div class="container header-inner">
-        <a class="brand" href="./" aria-label="Goalbreaker home"
-          ><img
-            src="assets/logo-goalbreaker.png"
-            width="640"
-            height="155"
-            alt="Goalbreaker"
-       ></a>
+        <a class="studio-brand" href="./" aria-label="Talvero Games home"
+          ><img src="assets/talvero-emblem.png" width="304" height="214" alt=""
+          ><span>TALVERO<small>GAMES</small></span></a>
         <nav aria-label="Main navigation">
-          <a href="./#game">The game</a>
-          <a href="support.html">Support</a>
-          <a href="privacy.html">Privacy</a>
+          <a class="nav-games" href="#games">Games</a>
+          <a href="goalbreaker/">Goalbreaker</a>
+          <a href="goalbreaker/support/">Support</a>
+          <a href="goalbreaker/privacy/">Privacy</a>
         </nav>
       </div>
     </header>
     <main id="main">
-      <section class="hero" aria-labelledby="hero-title">
-        <div class="pitch-lines" aria-hidden="true"></div>
-        <div class="container hero-inner">
-          <div class="hero-copy">
+      <section class="studio-hero" aria-labelledby="studio-title">
+        <picture class="studio-hero-media">
+          <source media="(max-width: 900px)" srcset="assets/studio-hero-1200.webp">
+          <img
+            src="assets/studio-hero.webp"
+            width="1920"
+            height="1086"
+            alt=""
+            fetchpriority="high"
+         >
+        </picture>
+        <div class="container studio-hero-inner">
+          <div class="studio-hero-copy">
+            <img
+              class="studio-mark"
+              src="assets/talvero-mark.png"
+              width="640"
+              height="478"
+              alt="Talvero Games"
+           >
             <p class="eyebrow">
-              <span class="status-dot" aria-hidden="true"></span>A football
-              puzzle with a twist
+              <span class="status-dot" aria-hidden="true"></span>Independent
+              game studio · Türkiye
             </p>
-            <h1 id="hero-title">
-              Draw the shot.<br>Break the wall.<br><span>Score.</span>
-            </h1>
+            <h1 id="studio-title">Small studio.<br>Big love for <span>play.</span></h1>
             <p class="hero-description">
-              One finger. A few footballs. A wall standing in your way. Find the
-              angle, bring it down, and make every shot count.
+              We make bright, physical puzzle games for your phone: quick to
+              pick up, satisfying to master and fair to the people who play
+              them.
             </p>
-            <a class="button button-gold" href="#game"
-              >See how it plays <span aria-hidden="true">↓</span></a
-            >
-            <p class="hero-note">Made for mobile. Built for one more try.</p>
-          </div>
-          <div class="hero-art">
-            <div class="art-orbit" aria-hidden="true"></div>
-            <figure class="game-frame frame-home">
-              <img
-                src="assets/home.webp"
-                alt="Goalbreaker home screen with a footballer, customisation options and the Play button"
-                width="720"
-                height="1280"
-                fetchpriority="high"
-             >
-            </figure>
-            <figure class="game-frame frame-play">
-              <img
-                src="assets/gameplay.webp"
-                alt="A Goalbreaker puzzle: a striker faces a wall of metal blocks, a wooden barrier and a ramp"
-                width="720"
-                height="1280"
-                fetchpriority="high"
-             >
-            </figure>
-            <div class="art-caption">
-              <span aria-hidden="true">✦</span> A clever shot changes
-              everything.
+            <div class="hero-actions">
+              <a class="button button-gold" href="goalbreaker/"
+                >Meet Goalbreaker <span aria-hidden="true">→</span></a
+              ><a class="hero-follow" href="https://www.instagram.com/talverogames/" rel="noopener"
+                ><svg class="ig-icon" viewBox="0 0 24 24" width="20" height="20" aria-hidden="true" focusable="false"><rect x="3" y="3" width="18" height="18" rx="5" fill="none" stroke="currentColor" stroke-width="2"/><circle cx="12" cy="12" r="4.2" fill="none" stroke="currentColor" stroke-width="2"/><circle cx="17.4" cy="6.6" r="1.3" fill="currentColor"/></svg><span>@talverogames</span></a
+              >
             </div>
           </div>
         </div>
       </section>
 
-      <section class="stats-band" aria-label="Game highlights">
-        <div class="container stats">
-          <p><strong>125</strong><span>main levels</span></p>
-          <p><strong>5</strong><span>chapters to conquer</span></p>
-          <p><strong>1</strong><span>finger to play</span></p>
-          <p><strong>Offline</strong><span>Play at your pace</span></p>
-        </div>
-      </section>
-
-      <section
-        class="section container game-intro"
-        id="game"
-        aria-labelledby="game-title"
-      >
+      <section class="section container games-section" id="games" aria-labelledby="games-title">
         <div class="section-heading">
-          <p class="eyebrow">Think it. Draw it. Nail it.</p>
-          <h2 id="game-title">Every wall is<br>a new puzzle.</h2>
+          <p class="eyebrow">Our games</p>
+          <h2 id="games-title">Made for one<br>more try.</h2>
           <p>
-            Football instinct meets a little creative destruction. It’s easy to
-            take a shot. Finding the perfect one is where the fun starts.
+            Every game we make starts with a simple touch and a satisfying
+            reaction. Here is the first one.
           </p>
         </div>
-        <div class="feature-grid">
-          <article>
-            <span class="feature-number" aria-hidden="true">01 /</span>
-            <h3>Find your angle</h3>
-            <p>
-              Draw a straight shot or bend your line into a curve. Read the
-              obstacles and work out your way to the goal.
+        <article class="game-card" aria-labelledby="goalbreaker-title">
+          <a class="game-card-media" href="goalbreaker/" tabindex="-1" aria-hidden="true"
+            ><img
+              src="assets/goalbreaker-art.webp"
+              width="1400"
+              height="600"
+              alt=""
+              loading="lazy"
+           ></a>
+          <div class="game-card-body">
+            <p class="game-status">
+              <span class="status-dot" aria-hidden="true"></span>Android · Coming
+              soon to Google Play
             </p>
-          </article>
-          <article>
-            <span class="feature-number" aria-hidden="true">02 /</span>
-            <h3>Bring it down</h3>
+            <h3 id="goalbreaker-title">Goalbreaker</h3>
+            <p class="game-tagline">Draw the shot. Break the wall. Score.</p>
             <p>
-              Break through wood, crack the bricks, shatter glass and send
-              structures tumbling. Different walls need different ideas.
+              A football puzzle game. Draw your shot, bend it around obstacles
+              and bring down the wall between you and the goal across 150 levels
+              in six chapters, with side roads and daily walls on top.
             </p>
-          </article>
-          <article>
-            <span class="feature-number" aria-hidden="true">03 /</span>
-            <h3>Make it count</h3>
-            <p>
-              Beat the keeper, chase three stars and come back for a sharper
-              solution. A limited supply of balls makes every decision matter.
-            </p>
-          </article>
-        </div>
+            <ul class="game-tags" aria-label="Game features">
+              <li>Football</li>
+              <li>Puzzle</li>
+              <li>Physics</li>
+              <li>Plays offline</li>
+            </ul>
+            <div class="game-links">
+              <a class="button button-navy" href="goalbreaker/"
+                >Explore the game <span aria-hidden="true">→</span></a
+              ><a href="goalbreaker/support/">Support</a
+              ><a href="goalbreaker/privacy/">Privacy policy</a
+              ><a class="game-follow" href="https://www.instagram.com/goalbreakergame/" rel="noopener"><svg class="ig-icon" viewBox="0 0 24 24" width="20" height="20" aria-hidden="true" focusable="false"><rect x="3" y="3" width="18" height="18" rx="5" fill="none" stroke="currentColor" stroke-width="2"/><circle cx="12" cy="12" r="4.2" fill="none" stroke="currentColor" stroke-width="2"/><circle cx="17.4" cy="6.6" r="1.3" fill="currentColor"/></svg><span>@goalbreakergame</span></a>
+            </div>
+          </div>
+        </article>
       </section>
 
-      <section class="victory-section" aria-labelledby="victory-title">
-        <div class="container victory-inner">
-          <figure class="victory-image">
-            <img
-              src="assets/celebration.webp"
-              alt="The Goalbreaker striker celebrates a goal as red and white confetti falls across the pitch"
-              width="720"
-              height="1280"
-              loading="lazy"
-           >
-            <figcaption>That just-one-more-level feeling.</figcaption>
-          </figure>
-          <div class="victory-copy">
-            <p class="eyebrow">Earn the celebration</p>
-            <h2 id="victory-title">Little shots.<br>Big moments.</h2>
-            <p>
-              There’s always another wall to beat and another way to make the
-              game your own.
-            </p>
-            <ul class="game-extras">
-              <li>
-                <strong>Keep the challenge going</strong
-                ><span>Five chapters, side challenges and daily walls.</span>
-              </li>
-              <li>
-                <strong>Make your mark</strong
-                ><span
-                  >Unlock kits, footballs, trails and goal celebrations with
-                  in-game rewards.</span
-                >
-              </li>
-              <li>
-                <strong>Play on your terms</strong
-                ><span
-                  >No account to create. No ads between levels. Optional
-                  rewarded videos when you choose an extra boost.</span
-                >
-              </li>
-            </ul>
-            <p class="small-note">
-              The current version has no in-app purchases. Ads require an
-              internet connection.
-            </p>
+      <section class="values-band" aria-labelledby="values-title">
+        <div class="container">
+          <p class="eyebrow">How we make games</p>
+          <h2 id="values-title">Fair, focused<br>and made to last.</h2>
+          <div class="values-grid">
+            <article>
+              <span class="feature-number" aria-hidden="true">01 /</span>
+              <h3>Play comes first</h3>
+              <p>
+                Every level is played through and checked before it ships. If a
+                puzzle is not fun to solve, it does not make the cut.
+              </p>
+            </article>
+            <article>
+              <span class="feature-number" aria-hidden="true">02 /</span>
+              <h3>Fair rewards</h3>
+              <p>
+                No ads between levels. A rewarded video plays only when you
+                choose an extra boost.
+              </p>
+            </article>
+            <article>
+              <span class="feature-number" aria-hidden="true">03 /</span>
+              <h3>Your data, your choice</h3>
+              <p>
+                No account to create. Play statistics and crash reports are
+                optional and stay off until you turn them on.
+              </p>
+            </article>
           </div>
         </div>
       </section>
 
-      <section
-        class="section container studio-section"
-        aria-labelledby="studio-title"
-      >
+      <section class="section container studio-section" id="about" aria-labelledby="about-title">
         <div>
-          <p class="eyebrow">From Talvero Games</p>
-          <h2 id="studio-title">Made with care.<br>Played your way.</h2>
+          <p class="eyebrow">About the studio</p>
+          <h2 id="about-title">Hello from<br>Talvero Games.</h2>
           <p>
-            Goalbreaker is made by Doğukan Saçmaözü, an independent developer in
-            Türkiye. A small studio, an idea worth chasing, and a game made
-            better by the people playing it.
-          </p>
-          <p class="release-note">
-            <span class="status-dot" aria-hidden="true"></span>Currently in
-            testing. Public store links will be added when available.
+            Talvero Games is the independent studio of Doğukan Saçmaözü in
+            Türkiye. We design, build and support our games ourselves, and we
+            read every message players send.
           </p>
         </div>
         <div class="resource-links">
-          <a href="support.html"
-            ><span class="resource-label">Player support</span
-            ><strong
-              >A question or a clever idea?
-              <span aria-hidden="true">↗</span></strong
-            ><span>Find answers, report a bug or get in touch.</span></a
-          ><a href="privacy.html"
-            ><span class="resource-label">Privacy policy</span
-            ><strong
-              >Your data. Your choices.
-              <span aria-hidden="true">↗</span></strong
-            ><span>Read what the game uses and what you control.</span></a
+          <a href="mailto:dogukangamesdev@gmail.com"
+            ><span class="resource-label">Say hello</span
+            ><strong>dogukangamesdev@gmail.com <span aria-hidden="true">↗</span></strong
+            ><span>Questions, feedback, press or partnerships.</span></a
+          ><a href="https://www.instagram.com/talverogames/" rel="noopener"
+            ><span class="resource-label">Instagram</span
+            ><strong>@talverogames <span aria-hidden="true">↗</span></strong
+            ><span>Studio news, new games and a look behind the scenes.</span></a
           >
         </div>
       </section>
@@ -254,9 +213,10 @@
           <p>Small studio. Big love for play.</p>
         </div>
         <nav aria-label="Footer navigation">
-          <a href="./">The game</a
-          ><a href="support.html">Support &amp; contact</a
-          ><a href="privacy.html">Privacy policy</a>
+          <a href="goalbreaker/">Goalbreaker</a
+          ><a href="goalbreaker/support/">Support &amp; contact</a
+          ><a href="goalbreaker/privacy/">Privacy policy</a
+          ><a href="https://www.instagram.com/talverogames/" rel="noopener">Instagram</a>
         </nav>
       </div>
       <div class="container footer-bottom">

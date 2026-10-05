@@ -1487,3 +1487,297 @@ p + p {
     break-inside: avoid;
   }
 }
+
+/* ---------- Talvero Games: studio header, home and game card ---------- */
+.studio-brand {
+  display: inline-flex;
+  align-items: center;
+  gap: 14px;
+  color: #fff;
+  text-decoration: none;
+  flex-shrink: 0;
+}
+.studio-brand img {
+  width: 46px;
+  height: auto;
+}
+.studio-brand span {
+  font-weight: 800;
+  font-size: 1.12rem;
+  letter-spacing: 0.14em;
+  line-height: 1;
+}
+.studio-brand small {
+  display: block;
+  font-size: 0.5rem;
+  letter-spacing: 0.42em;
+  margin-top: 7px;
+  color: var(--gold);
+}
+.studio-brand:hover span {
+  color: #fff;
+}
+.ig-icon {
+  flex-shrink: 0;
+}
+.studio-hero {
+  position: relative;
+  overflow: hidden;
+  background: var(--navy);
+  color: var(--white);
+}
+.studio-hero-media img {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: 62% 50%;
+}
+.studio-hero::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+  background: linear-gradient(90deg, #101f30f0 0%, #101f30cc 34%, #101f3033 62%, #101f3000 80%),
+    linear-gradient(0deg, #101f30a6 0%, #101f3000 30%);
+}
+.studio-hero-inner {
+  position: relative;
+  z-index: 2;
+  display: flex;
+  align-items: center;
+  min-height: 720px;
+  padding-block: 64px 80px;
+}
+.studio-hero-copy {
+  max-width: 560px;
+}
+.studio-mark {
+  width: 210px;
+  margin-bottom: 30px;
+}
+.studio-hero .eyebrow {
+  color: #c2d0c8;
+  font-size: 0.68rem;
+  letter-spacing: 0.14em;
+}
+.studio-hero h1 {
+  font-size: clamp(3.6rem, 6.4vw, 5.6rem);
+  line-height: 0.98;
+}
+.studio-hero h1 span {
+  color: var(--gold);
+}
+.studio-hero .hero-description {
+  margin: 26px 0 30px;
+  color: #d3dbe0;
+  max-width: 40ch;
+  font-size: 1.06rem;
+  line-height: 1.7;
+}
+.hero-actions {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 18px 28px;
+}
+.hero-follow {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  min-height: 48px;
+  color: #fff;
+  font-weight: 800;
+  font-size: 0.9rem;
+  text-decoration: none;
+}
+.hero-follow:hover {
+  color: var(--gold);
+}
+.games-section .section-heading {
+  margin-bottom: 52px;
+}
+.game-card {
+  display: grid;
+  grid-template-columns: minmax(0, 1.15fr) minmax(0, 1fr);
+  border: 1px solid var(--line);
+  border-radius: 14px;
+  overflow: hidden;
+  background: var(--white);
+  box-shadow: 0 18px 50px #101f3014;
+}
+.game-card-media {
+  display: block;
+  background: var(--navy);
+}
+.game-card-media img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: 72% 50%;
+}
+.game-card-body {
+  padding: 44px 46px 46px;
+}
+.game-status {
+  font-size: 0.72rem;
+  font-weight: 800;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--green);
+}
+.game-status .status-dot {
+  background: var(--green);
+  margin-right: 8px;
+}
+.game-card h3 {
+  font-family: var(--heading);
+  font-size: clamp(2.6rem, 4vw, 3.4rem);
+  line-height: 1;
+  letter-spacing: -0.01em;
+  margin-top: 18px;
+}
+.game-tagline {
+  margin-top: 10px;
+  font-weight: 800;
+  color: var(--ink);
+}
+.game-card-body > p:not(.game-status):not(.game-tagline) {
+  margin-top: 16px;
+  color: var(--muted);
+  font-size: 0.97rem;
+}
+.game-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  list-style: none;
+  padding: 0;
+  margin: 22px 0 0;
+}
+.game-tags li {
+  font-size: 0.75rem;
+  font-weight: 800;
+  padding: 5px 12px;
+  border-radius: 99px;
+  background: #eef3ea;
+  color: var(--green);
+}
+.game-links {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 14px 26px;
+  margin-top: 30px;
+}
+.game-links a:not(.button) {
+  font-weight: 800;
+  font-size: 0.9rem;
+}
+.game-follow {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+}
+.button-navy {
+  background: var(--navy);
+  color: #fff;
+}
+.values-band {
+  background: var(--navy);
+  color: #fff;
+  padding-block: 100px;
+}
+.values-band .eyebrow,
+.values-band .feature-number {
+  color: var(--gold);
+}
+.values-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 45px;
+  margin-top: 52px;
+}
+.values-grid article {
+  border-top: 1px solid #ffffff26;
+  padding-top: 22px;
+}
+.values-grid p {
+  color: #b9c6cf;
+  font-size: 0.95rem;
+  margin-top: 14px;
+  max-width: 34ch;
+}
+.game-logo {
+  width: 240px;
+  margin-bottom: 26px;
+}
+.studio-section .eyebrow a {
+  color: inherit;
+  text-decoration: none;
+}
+.studio-section .eyebrow a:hover {
+  text-decoration: underline;
+}
+@media (max-width: 1050px) {
+  .game-card {
+    grid-template-columns: 1fr;
+  }
+  .game-card-media img {
+    aspect-ratio: 16 / 8;
+  }
+  .values-grid {
+    grid-template-columns: 1fr;
+    gap: 28px;
+  }
+}
+@media (max-width: 800px) {
+  .studio-hero-inner {
+    min-height: 640px;
+    align-items: flex-end;
+    padding-block: 48px 56px;
+  }
+  .studio-hero::before {
+    background: linear-gradient(0deg, #101f30f5 0%, #101f30d9 45%, #101f3066 75%, #101f3033 100%);
+  }
+  .studio-hero-media img {
+    object-position: 72% 50%;
+  }
+  .studio-mark {
+    width: 170px;
+    margin-bottom: 22px;
+  }
+  .game-card-body {
+    padding: 30px 26px 32px;
+  }
+  .values-band {
+    padding-block: 72px;
+  }
+  .game-logo {
+    width: 200px;
+  }
+}
+@media (max-width: 560px) {
+  .studio-brand img {
+    width: 38px;
+  }
+  .studio-brand span {
+    font-size: 1rem;
+  }
+  .site-header nav {
+    gap: 18px;
+  }
+  .studio-hero h1 {
+    font-size: clamp(3rem, 14vw, 4.2rem);
+  }
+  .hero-actions .button {
+    width: 100%;
+    justify-content: space-between;
+  }
+}
+@media (max-width: 380px) {
+  .site-header .nav-games {
+    display: none;
+  }
+}
