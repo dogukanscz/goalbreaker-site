@@ -34,16 +34,36 @@
    >
     <link rel="stylesheet" href="style.css?v=20261006">
     <script type="application/ld+json">
-      {
-        "@context": "https://schema.org",
-        "@type": "Organization",
-        "name": "Talvero Games",
-        "url": "https://talverogames.com/",
-        "logo": "https://talverogames.com/assets/talvero-mark.png",
-        "email": "dogukangamesdev@gmail.com",
-        "founder": { "@type": "Person", "name": "Doğukan Saçmaözü" },
-        "sameAs": ["https://www.instagram.com/talverogames/"]
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "WebSite",
+      "@id": "https://talverogames.com/#website",
+      "name": "Talvero Games",
+      "alternateName": "Talvero",
+      "url": "https://talverogames.com/",
+      "publisher": {
+        "@id": "https://talverogames.com/#organization"
       }
+    },
+    {
+      "@type": "Organization",
+      "name": "Talvero Games",
+      "url": "https://talverogames.com/",
+      "logo": "https://talverogames.com/assets/talvero-mark.png",
+      "email": "dogukangamesdev@gmail.com",
+      "founder": {
+        "@type": "Person",
+        "name": "Doğukan Saçmaözü"
+      },
+      "sameAs": [
+        "https://www.instagram.com/talverogames/"
+      ],
+      "@id": "https://talverogames.com/#organization"
+    }
+  ]
+}
     </script>
   </head>
   <body>
