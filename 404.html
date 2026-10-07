@@ -3,7 +3,6 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <base href="/">
     <meta name="robots" content="noindex">
     <meta name="theme-color" content="#101f30">
     <meta name="referrer" content="strict-origin-when-cross-origin">
@@ -31,10 +30,11 @@
     <meta property="og:image:height" content="630">
     <meta
       property="og:image:alt"
-      content="Goalbreaker: Draw the shot. Break the wall. Score."
+      content="The Talvero Games logo over a football stadium at dusk"
    >
     <meta name="twitter:card" content="summary_large_image">
-    <link rel="icon" href="/assets/talvero-emblem.png" type="image/png">
+    <link rel="icon" href="/assets/talvero-icon-192.png" type="image/png" sizes="192x192">
+    <link rel="apple-touch-icon" href="/assets/talvero-touch-icon-180.png">
     <link
       rel="preload"
       href="/assets/fonts/barlow-condensed-800-latin.woff2"
@@ -42,21 +42,27 @@
       type="font/woff2"
       crossorigin
    >
-    <link rel="stylesheet" href="/style.css?v=20261006">
+    <link rel="stylesheet" href="/style.css?v=20261007">
   </head>
   <body>
     <a class="skip-link" href="#main">Skip to content</a>
     <header class="site-header">
       <div class="container header-inner">
         <a class="studio-brand" href="/" aria-label="Talvero Games home"
-          ><img src="/assets/talvero-emblem.png" width="304" height="214" alt=""
-          ><span>TALVERO<small>GAMES</small></span></a>
+          ><img src="/assets/talvero-emblem-144.webp" width="144" height="102" alt=""
+          ><span>TALVERO <small>GAMES</small></span></a>
         <nav aria-label="Main navigation">
           <a class="nav-games" href="/#games">Games</a>
           <a href="/goalbreaker/">Goalbreaker</a>
           <a href="/goalbreaker/support/">Support</a>
           <a href="/goalbreaker/privacy/">Privacy</a>
         </nav>
+        <div class="header-tools">
+          <a class="nav-ig" href="https://www.instagram.com/talverogames/" rel="noopener"
+            ><svg class="ig-glyph" viewBox="2 2 20 20" width="30" height="30" aria-hidden="true" focusable="false"><rect x="3" y="3" width="18" height="18" rx="5" fill="none" stroke="currentColor" stroke-width="2"/><circle cx="12" cy="12" r="4.2" fill="none" stroke="currentColor" stroke-width="2"/><circle cx="17.4" cy="6.6" r="1.3" fill="currentColor"/></svg><span class="nav-ig-label" aria-hidden="true">Follow</span
+            ><span class="visually-hidden">Follow Talvero Games on Instagram</span></a
+          >
+        </div>
       </div>
     </header>
     <main id="main" class="container error-page">
@@ -66,6 +72,9 @@
       <a class="button button-gold" href="/"
         >Back to home <span aria-hidden="true">→</span></a
       >
+      <p class="error-alt" lang="tr">
+        Aradığın sayfa burada yok. <a href="/tr/">Türkçe ana sayfaya git</a>
+      </p>
     </main>
     <footer class="site-footer">
       <div class="container footer-top">

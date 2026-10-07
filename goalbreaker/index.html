@@ -1,28 +1,34 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-alt-lang="tr" data-alt-href="/tr/goalbreaker/">
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script>(function(d){var h=d.documentElement,a=h.getAttribute("data-alt-lang"),u=h.getAttribute("data-alt-href"),k="talvero-lang",s=null,b=0;try{s=localStorage.getItem(k)}catch(e){b=1}var n=((navigator.languages&&navigator.languages[0])||navigator.language||"").toLowerCase(),r=d.referrer,o=location.origin+"/";if(a==="tr"?s==="tr"||(!s&&/^tr(-|$)/.test(n)&&r.indexOf(o+"tr/")!==0&&!(b&&r.indexOf(o)===0)):s==="en")location.replace(u+location.hash);d.addEventListener("click",function(e){var l=e.target.closest&&e.target.closest("[data-set-lang]");if(l)try{localStorage.setItem(k,l.getAttribute("data-set-lang"))}catch(x){}})})(document);</script>
     <meta name="theme-color" content="#101f30">
     <meta name="referrer" content="strict-origin-when-cross-origin">
-    <title>Goalbreaker — Draw the shot. Break the wall. Score. · Talvero Games</title>
+    <title>Goalbreaker: Football Puzzle for Android · Talvero Games</title>
     <meta
       name="description"
-      content="A football puzzle by Talvero Games. Draw your shot, bring down the wall and score across 150 levels. Explore the game, get support and manage your privacy."
+      content="Goalbreaker is a football (soccer) puzzle game for Android. Draw the shot, break the wall and score across 150 levels in six chapters. Plays offline, no account."
    >
     <link
       rel="canonical"
       href="https://talverogames.com/goalbreaker/"
    >
+    <link rel="alternate" hreflang="en" href="https://talverogames.com/goalbreaker/">
+    <link rel="alternate" hreflang="tr" href="https://talverogames.com/tr/goalbreaker/">
+    <link rel="alternate" hreflang="x-default" href="https://talverogames.com/goalbreaker/">
     <meta property="og:type" content="website">
     <meta property="og:site_name" content="Goalbreaker · Talvero Games">
+    <meta property="og:locale" content="en_GB">
+    <meta property="og:locale:alternate" content="tr_TR">
     <meta
       property="og:title"
-      content="Goalbreaker — Draw the shot. Break the wall. Score."
+      content="Goalbreaker: Football Puzzle — Draw the shot. Break the wall. Score."
    >
     <meta
       property="og:description"
-      content="A football puzzle by Talvero Games. Draw your shot, bring down the wall and score across 150 levels. Explore the game, get support and manage your privacy."
+      content="Goalbreaker is a football (soccer) puzzle game for Android. Draw the shot, break the wall and score across 150 levels in six chapters. Plays offline, no account."
    >
     <meta
       property="og:url"
@@ -47,43 +53,68 @@
       type="font/woff2"
       crossorigin
    >
-    <link rel="stylesheet" href="../style.css?v=20261006">
+    <link rel="stylesheet" href="../style.css?v=20261007">
     <script type="application/ld+json">
 {
   "@context": "https://schema.org",
-  "@type": [
-    "VideoGame",
-    "MobileApplication"
-  ],
-  "@id": "https://talverogames.com/goalbreaker/#game",
-  "name": "Goalbreaker",
-  "url": "https://talverogames.com/goalbreaker/",
-  "description": "A football puzzle game by Talvero Games: draw your shot, bring down the wall and score across 150 levels.",
-  "image": "https://talverogames.com/assets/goalbreaker-feature.jpg",
-  "genre": [
-    "Puzzle",
-    "Sports"
-  ],
-  "gamePlatform": "Android",
-  "operatingSystem": "Android",
-  "applicationCategory": "GameApplication",
-  "inLanguage": [
-    "en",
-    "tr"
-  ],
-  "publisher": {
-    "@type": "Organization",
-    "@id": "https://talverogames.com/#organization",
-    "name": "Talvero Games",
-    "url": "https://talverogames.com/"
-  },
-  "offers": {
-    "@type": "Offer",
-    "price": "0",
-    "priceCurrency": "USD"
-  },
-  "sameAs": [
-    "https://www.instagram.com/goalbreakergame/"
+  "@graph": [
+    {
+      "@type": [
+        "VideoGame",
+        "MobileApplication"
+      ],
+      "@id": "https://talverogames.com/goalbreaker/#game",
+      "name": "Goalbreaker",
+      "alternateName": "Goalbreaker: Football Puzzle",
+      "url": "https://talverogames.com/goalbreaker/",
+      "description": "Goalbreaker is a football (soccer) puzzle game for Android by Talvero Games: draw the shot, break the wall and score across 150 levels in six chapters.",
+      "image": "https://talverogames.com/assets/goalbreaker-feature.jpg",
+      "screenshot": [
+        "https://talverogames.com/assets/gameplay.webp",
+        "https://talverogames.com/assets/home.webp",
+        "https://talverogames.com/assets/celebration.webp"
+      ],
+      "genre": [
+        "Puzzle",
+        "Sports"
+      ],
+      "gamePlatform": "Android",
+      "operatingSystem": "Android",
+      "applicationCategory": "GameApplication",
+      "inLanguage": [
+        "en",
+        "tr"
+      ],
+      "author": {
+        "@type": "Person",
+        "name": "Doğukan Saçmaözü"
+      },
+      "publisher": {
+        "@type": "Organization",
+        "@id": "https://talverogames.com/#organization",
+        "name": "Talvero Games",
+        "url": "https://talverogames.com/"
+      },
+      "sameAs": [
+        "https://www.instagram.com/goalbreakergame/"
+      ]
+    },
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Talvero Games",
+          "item": "https://talverogames.com/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Goalbreaker"
+        }
+      ]
+    }
   ]
 }
     </script>
@@ -93,14 +124,23 @@
     <header class="site-header">
       <div class="container header-inner">
         <a class="studio-brand" href="../" aria-label="Talvero Games home"
-          ><img src="../assets/talvero-emblem.png" width="304" height="214" alt=""
-          ><span>TALVERO<small>GAMES</small></span></a>
+          ><img src="../assets/talvero-emblem-144.webp" width="144" height="102" alt=""
+          ><span>TALVERO <small>GAMES</small></span></a>
         <nav aria-label="Main navigation">
           <a class="nav-games" href="../#games">Games</a>
           <a href="../goalbreaker/" aria-current="page">Goalbreaker</a>
           <a href="../goalbreaker/support/">Support</a>
           <a href="../goalbreaker/privacy/">Privacy</a>
         </nav>
+        <div class="header-tools">
+          <a class="lang-switch" href="../tr/goalbreaker/" hreflang="tr" lang="tr" data-set-lang="tr"
+            ><span class="lang-code">TR</span
+            ><span class="visually-hidden"> – Türkçe</span></a
+          ><a class="nav-ig" href="https://www.instagram.com/goalbreakergame/" rel="noopener"
+            ><svg class="ig-glyph" viewBox="2 2 20 20" width="30" height="30" aria-hidden="true" focusable="false"><rect x="3" y="3" width="18" height="18" rx="5" fill="none" stroke="currentColor" stroke-width="2"/><circle cx="12" cy="12" r="4.2" fill="none" stroke="currentColor" stroke-width="2"/><circle cx="17.4" cy="6.6" r="1.3" fill="currentColor"/></svg><span class="nav-ig-label" aria-hidden="true">Follow</span
+            ><span class="visually-hidden">Follow Goalbreaker on Instagram</span></a
+          >
+        </div>
       </div>
     </header>
     <main id="main">
@@ -110,14 +150,14 @@
           <div class="hero-copy">
             <img
               class="game-logo"
-              src="../assets/logo-goalbreaker.png"
+              src="../assets/logo-goalbreaker.webp"
               width="640"
               height="155"
               alt="Goalbreaker"
            >
             <p class="eyebrow">
               <span class="status-dot" aria-hidden="true"></span>A football
-              puzzle with a twist
+              puzzle game for Android
             </p>
             <h1 id="hero-title">
               Draw the shot.<br>Break the wall.<br><span>Score.</span>
@@ -129,7 +169,7 @@
             <a class="button button-gold" href="#game"
               >See how it plays <span aria-hidden="true">↓</span></a
             >
-            <p class="hero-note">Made for mobile. Built for one more try.</p>
+            <p class="hero-note">Android · Coming soon to Google Play</p>
           </div>
           <div class="hero-art">
             <div class="art-orbit" aria-hidden="true"></div>
@@ -174,16 +214,26 @@
         aria-labelledby="game-title"
       >
         <div class="section-heading">
-          <p class="eyebrow">Think it. Draw it. Nail it.</p>
+          <p class="eyebrow">How to play</p>
           <h2 id="game-title">Every wall is<br>a new puzzle.</h2>
           <p>
-            Football instinct meets a little creative destruction. It’s easy to
-            take a shot. Finding the perfect one is where the fun starts.
+            Every level puts a wall between you and the goal. Football instinct
+            meets a little creative destruction. It’s easy to take a shot.
+            Finding the perfect one is where the fun starts.
           </p>
         </div>
+        <figure class="intro-art">
+          <img
+            src="../assets/goalbreaker-art.webp"
+            width="1400"
+            height="600"
+            alt="Goalbreaker artwork: a football smashing through a wall of wooden crates, metal blocks and glass"
+            loading="lazy"
+         >
+        </figure>
         <div class="feature-grid">
           <article>
-            <span class="feature-number" aria-hidden="true">01 /</span>
+            <span class="feature-number" aria-hidden="true">01</span>
             <h3>Find your angle</h3>
             <p>
               Draw a straight shot or bend your line into a curve. Read the
@@ -191,7 +241,7 @@
             </p>
           </article>
           <article>
-            <span class="feature-number" aria-hidden="true">02 /</span>
+            <span class="feature-number" aria-hidden="true">02</span>
             <h3>Bring it down</h3>
             <p>
               Break through wood, crack the bricks, shatter glass and send
@@ -199,7 +249,7 @@
             </p>
           </article>
           <article>
-            <span class="feature-number" aria-hidden="true">03 /</span>
+            <span class="feature-number" aria-hidden="true">03</span>
             <h3>Make it count</h3>
             <p>
               Beat the keeper, chase three stars and come back for a sharper
@@ -257,6 +307,121 @@
       </section>
 
       <section
+        class="section container faq-section game-faq"
+        id="faq"
+        aria-labelledby="faq-title"
+      >
+        <div class="section-heading">
+          <p class="eyebrow">Goalbreaker FAQ</p>
+          <h2 id="faq-title">Before<br>kick-off.</h2>
+        </div>
+        <div class="faq-list">
+          <details>
+            <summary>What kind of game is Goalbreaker?</summary>
+            <div class="faq-answer">
+              <p>
+                A football (soccer) puzzle game for Android. Each level puts a
+                wall between you and the goal: draw your shot with one finger,
+                bend it around obstacles and bring the wall down to score.
+              </p>
+            </div>
+          </details>
+          <details>
+            <summary>How many levels are there?</summary>
+            <div class="faq-answer">
+              <p>
+                150 main levels across six chapters, with side roads and daily
+                walls on top.
+              </p>
+            </div>
+          </details>
+          <details>
+            <summary>When can I play it?</summary>
+            <div class="faq-answer">
+              <p>
+                Goalbreaker is coming soon to Google Play for Android. Follow
+                <a href="https://www.instagram.com/goalbreakergame/" rel="noopener">@goalbreakergame</a>
+                on Instagram to hear when it launches.
+              </p>
+            </div>
+          </details>
+          <details>
+            <summary>Does it work offline?</summary>
+            <div class="faq-answer">
+              <p>
+                Yes. Levels, unlocks and your progress work offline. Optional
+                rewarded videos need an internet connection.
+              </p>
+            </div>
+          </details>
+          <details>
+            <summary>Are there ads or in-app purchases?</summary>
+            <div class="faq-answer">
+              <p>
+                No ads between levels. A rewarded video plays only when you
+                choose one for an extra boost or an in-game reward, and the
+                current version has no in-app purchases.
+                <a href="support/">Support</a> has the details.
+              </p>
+            </div>
+          </details>
+          <details>
+            <summary>Do I need an account?</summary>
+            <div class="faq-answer">
+              <p>
+                No account to create. Your progress is stored on your device.
+              </p>
+            </div>
+          </details>
+          <details>
+            <summary>Which languages does it support?</summary>
+            <div class="faq-answer">
+              <p>
+                The game is in English and Turkish.
+              </p>
+            </div>
+          </details>
+          <details>
+            <summary>Who makes Goalbreaker?</summary>
+            <div class="faq-answer">
+              <p>
+                Doğukan Saçmaözü, the independent developer behind
+                <a href="../">Talvero Games</a> in Türkiye.
+              </p>
+            </div>
+          </details>
+        </div>
+      </section>
+
+      <section class="launch-band" aria-labelledby="launch-title">
+        <div class="container launch-inner">
+          <img
+            class="launch-avatar"
+            src="../assets/ig-goalbreakergame.webp"
+            width="224"
+            height="224"
+            alt=""
+            loading="lazy"
+         >
+          <div class="launch-copy">
+            <p class="eyebrow">
+              <span class="status-dot" aria-hidden="true"></span>Coming soon to
+              Google Play
+            </p>
+            <h2 id="launch-title">Be the first to know<br>when it launches.</h2>
+            <p>Follow @goalbreakergame on Instagram for launch news.</p>
+          </div>
+          <a
+            class="button button-navy"
+            href="https://www.instagram.com/goalbreakergame/"
+            rel="noopener"
+            ><svg class="ig-glyph" viewBox="2 2 20 20" width="30" height="30" aria-hidden="true" focusable="false"><rect x="3" y="3" width="18" height="18" rx="5" fill="none" stroke="currentColor" stroke-width="2"/><circle cx="12" cy="12" r="4.2" fill="none" stroke="currentColor" stroke-width="2"/><circle cx="17.4" cy="6.6" r="1.3" fill="currentColor"/></svg><span>Follow @goalbreakergame</span
+            ><span class="visually-hidden"> on Instagram</span></a
+          >
+        </div>
+      </section>
+
+      <section
         class="section container studio-section"
         aria-labelledby="studio-title"
       >
@@ -267,11 +432,6 @@
             Goalbreaker is made by Doğukan Saçmaözü, an independent developer in
             Türkiye. A small studio, an idea worth chasing, and a game made
             better by the people playing it.
-          </p>
-          <p class="release-note">
-            <span class="status-dot" aria-hidden="true"></span>Coming soon to
-            Google Play. Follow <a href="https://www.instagram.com/goalbreakergame/" rel="noopener">@goalbreakergame</a>
-            for the launch.
           </p>
         </div>
         <div class="resource-links">
