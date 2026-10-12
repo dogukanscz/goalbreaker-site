@@ -53,7 +53,7 @@
       type="font/woff2"
       crossorigin
    >
-    <link rel="stylesheet" href="../style.css?v=20261007">
+    <link rel="stylesheet" href="../style.css?v=20261012">
     <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -96,6 +96,7 @@
         "url": "https://talverogames.com/"
       },
       "sameAs": [
+        "https://play.google.com/store/apps/details?id=com.dogukanscz.goalbreaker",
         "https://www.instagram.com/goalbreakergame/"
       ]
     },
@@ -166,10 +167,19 @@
               One finger. A few footballs. A wall standing in your way. Find the
               angle, bring it down, and make every shot count.
             </p>
-            <a class="button button-gold" href="#game"
-              >See how it plays <span aria-hidden="true">↓</span></a
-            >
-            <p class="hero-note">Android · Coming soon to Google Play</p>
+            <div class="game-hero-actions">
+              <a class="store-badge" href="https://play.google.com/store/apps/details?id=com.dogukanscz.goalbreaker" rel="noopener"
+                ><img
+                  src="../assets/google-play-badge-en.webp"
+                  width="564"
+                  height="168"
+                  alt="Get it on Google Play"
+               ></a
+              ><a class="button button-gold" href="#game"
+                >See how it plays <span aria-hidden="true">↓</span></a
+              >
+            </div>
+            <p class="hero-note">Android · Now on Google Play</p>
           </div>
           <div class="hero-art">
             <div class="art-orbit" aria-hidden="true"></div>
@@ -339,9 +349,11 @@
             <summary>When can I play it?</summary>
             <div class="faq-answer">
               <p>
-                Goalbreaker is coming soon to Google Play for Android. Follow
+                Right now. Goalbreaker is out for Android:
+                <a href="https://play.google.com/store/apps/details?id=com.dogukanscz.goalbreaker" rel="noopener">get it on Google Play</a>.
+                Follow
                 <a href="https://www.instagram.com/goalbreakergame/" rel="noopener">@goalbreakergame</a>
-                on Instagram to hear when it launches.
+                on Instagram for news and updates.
               </p>
             </div>
           </details>
@@ -405,19 +417,32 @@
          >
           <div class="launch-copy">
             <p class="eyebrow">
-              <span class="status-dot" aria-hidden="true"></span>Coming soon to
-              Google Play
+              <span class="status-dot" aria-hidden="true"></span>Now on Google
+              Play
             </p>
-            <h2 id="launch-title">Be the first to know<br>when it launches.</h2>
-            <p>Follow @goalbreakergame on Instagram for launch news.</p>
+            <h2 id="launch-title">Your first wall<br>is waiting.</h2>
+            <p>
+              Goalbreaker is out for Android. Get it on Google Play and follow
+              @goalbreakergame on Instagram for news and updates.
+            </p>
           </div>
-          <a
-            class="button button-navy"
-            href="https://www.instagram.com/goalbreakergame/"
-            rel="noopener"
-            ><svg class="ig-glyph" viewBox="2 2 20 20" width="30" height="30" aria-hidden="true" focusable="false"><rect x="3" y="3" width="18" height="18" rx="5" fill="none" stroke="currentColor" stroke-width="2"/><circle cx="12" cy="12" r="4.2" fill="none" stroke="currentColor" stroke-width="2"/><circle cx="17.4" cy="6.6" r="1.3" fill="currentColor"/></svg><span>Follow @goalbreakergame</span
-            ><span class="visually-hidden"> on Instagram</span></a
-          >
+          <div class="launch-actions">
+            <a class="store-badge" href="https://play.google.com/store/apps/details?id=com.dogukanscz.goalbreaker" rel="noopener"
+              ><img
+                src="../assets/google-play-badge-en.webp"
+                width="564"
+                height="168"
+                alt="Get it on Google Play"
+                loading="lazy"
+             ></a
+            ><a
+              class="button button-navy"
+              href="https://www.instagram.com/goalbreakergame/"
+              rel="noopener"
+              ><svg class="ig-glyph" viewBox="2 2 20 20" width="30" height="30" aria-hidden="true" focusable="false"><rect x="3" y="3" width="18" height="18" rx="5" fill="none" stroke="currentColor" stroke-width="2"/><circle cx="12" cy="12" r="4.2" fill="none" stroke="currentColor" stroke-width="2"/><circle cx="17.4" cy="6.6" r="1.3" fill="currentColor"/></svg><span>Follow @goalbreakergame</span
+              ><span class="visually-hidden"> on Instagram</span></a
+            >
+          </div>
         </div>
       </section>
 
@@ -468,6 +493,9 @@
         <p>© 2026 Talvero Games · Doğukan Saçmaözü</p>
         <a href="mailto:dogukangamesdev@gmail.com">dogukangamesdev@gmail.com</a>
       </div>
+      <p class="container footer-legal">
+        Google Play and the Google Play logo are trademarks of Google LLC.
+      </p>
     </footer>
   </body>
 </html>

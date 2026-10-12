@@ -2117,3 +2117,52 @@ p + p {
     font-size: 1rem;
   }
 }
+
+/* ---------- Google Play badge (home and Goalbreaker) ---------- */
+.store-badge {
+  display: inline-block;
+  flex-shrink: 0;
+  border-radius: 7px;
+}
+.store-badge img {
+  width: auto;
+  height: 54px;
+}
+.store-badge:hover {
+  box-shadow: 0 4px 0 #0002;
+}
+.game-hero-actions {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 16px 22px;
+}
+.launch-actions {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+}
+.launch-actions .store-badge img {
+  height: 60px;
+}
+.footer-legal {
+  padding-top: 14px;
+  font-size: 0.66rem;
+}
+@media (max-width: 1050px) {
+  .launch-actions {
+    grid-column: 2;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-self: start;
+  }
+}
+@media (max-width: 560px) {
+  .launch-actions {
+    grid-column: auto;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-self: stretch;
+  }
+}
