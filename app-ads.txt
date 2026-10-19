@@ -165,3 +165,4 @@ themediagrid.com, JVHG38, RESELLER, 9fac4a4a87c2a44f
 nativo.com, 6089, RESELLER, 59521ca7cc5e9fee
 unity.com, 111252685, DIRECT, 96cabb5fbdde37a7
 pubmatic.com, 160456, RESELLER, 5d62403b186f2ace
+openx.com, 634324080, DIRECT, 6a698e2ec38604c6
