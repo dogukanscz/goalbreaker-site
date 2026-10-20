@@ -76,7 +76,7 @@
         <h1>Privacy policy.</h1>
         <p>What the game uses, why it uses it, and the choices you have.</p>
         <p class="effective-date">
-          Effective date: <time datetime="2026-10-08">8 October 2026</time>
+          Effective date: <time datetime="2026-10-21">21 October 2026</time>
         </p>
       </div>
       <section class="privacy-summary" aria-label="Privacy at a glance">
@@ -97,8 +97,9 @@
           <span class="summary-mark" aria-hidden="true">03</span
           ><strong>Ad choices are separate.</strong>
           <p>
-            Rewarded videos are optional. The ad service can process data when
-            preloading.
+            Rewarded videos are optional. From version 1.0.6, a full-screen ad
+            can also appear, at most once every five won levels. The ad service
+            can process data when it preloads ads.
           </p>
         </div>
       </section>
@@ -115,7 +116,7 @@
                 >
               </li>
               <li>
-                <a href="#advertising">Rewarded ads &amp; advertising privacy</a>
+                <a href="#advertising">Ads &amp; advertising privacy</a>
               </li>
               <li><a href="#updates">Google Play updates</a></li>
               <li><a href="#support-data">When you contact us</a></li>
@@ -180,7 +181,11 @@
               settings, your age range and the identifiers used by the services
               below are not included, and on Android 9 and later the progress
               file goes to cloud backup only when that backup is end-to-end
-              encrypted. Resetting or uninstalling the game does not
+              encrypted. On iOS, the game does not limit backups: iCloud and
+              computer backups can include the progress file, the game’s
+              settings (including your age range) and identifiers stored by the
+              services below, so restoring a backup can bring them back.
+              Resetting or uninstalling the game does not
               delete data already sent to the services below.
             </p>
             <p>
@@ -216,14 +221,16 @@
                 to open a locked chapter, ad impressions, clicks and reward results
                 reported by the ads SDK, session
                 activity, app version, device and operating system information,
-                language, an app-instance identifier, Google Play install referral
-                information and approximate location (such
+                language, an app-instance identifier, Google Play install
+                referral information (Android only) and approximate location (such
                 as city, region and country) derived from an IP address. We use it to understand how the game is played and
                 improve difficulty and rewards. We do not add a player name,
                 email address or account ID. Our Firebase Analytics configuration
-                disables advertising ID collection and denies advertising
-                storage, advertising user data and advertising personalisation
-                for this analytics integration.
+                disables advertising ID collection on Android and, on both
+                platforms, denies advertising storage, advertising user data and
+                advertising personalisation for this analytics integration. On
+                iOS, Firebase Analytics can also use the identifier for vendor
+                (IDFV), an identifier limited to apps from the same developer.
               </p>
               <p>
                 Gameplay events generated before you enable analytics are not
@@ -281,28 +288,57 @@
           </section>
           <section id="advertising">
             <h2>
-              <span class="section-index">04</span>Rewarded ads &amp; advertising
+              <span class="section-index">04</span>Ads &amp; advertising
               privacy
             </h2>
             <p>
-              The game uses <strong>Google AdMob</strong> for optional rewarded
-              ads. Videos play when you choose a reward; there are no ads
-              between levels. Once the advertising privacy flow allows ad
-              requests, the ad service can initialise and preload an ad
-              <strong>before</strong> you choose to watch a video.
+              The game uses <strong>Google AdMob</strong> for two kinds of ads.
+              <strong>Rewarded videos are optional:</strong> one plays only when
+              you choose it for an extra boost or an in-game reward.
+              <strong>From version 1.0.6</strong>, the game can also show a
+              full-screen ad (an interstitial) when you leave the results screen
+              of a level you have won. This happens at most once every five won
+              levels and only if at least two minutes have passed since the last
+              full-screen ad, including a rewarded video, closed. Only won levels
+              count, including replays of a level; losing a level, using Retry
+              after a loss or watching a rewarded video does not.
+              Interstitials are not shown during play, when the game opens or
+              after a lost level, and if no ad is ready you continue straight
+              away. Versions 1.0.5 and earlier show rewarded videos only.
+            </p>
+            <p>
+              Once the advertising privacy flow allows ad requests, the ad
+              service can initialise and preload a rewarded video and, from
+              version 1.0.6, an interstitial <strong>before</strong> any ad is
+              shown, even when no ad is due.
             </p>
             <p>
               Google and its advertising partners may process IP addresses and
               approximate location, device and app information, app launches and
-              ad interactions, performance diagnostics, and device identifiers
-              such as the Android advertising ID where available and, where
-              applicable, identifiers related to accounts signed in on the
-              device. The SDK also
-              uses app set ID for permitted purposes such as analytics and fraud
-              prevention. Advertising data is used to deliver and measure ads,
-              maintain the service and prevent fraud, with personalisation
-              depending on applicable consent and settings. The game does not
-              request precise GPS location.
+              ad interactions, the ads you have seen, performance diagnostics,
+              and device identifiers. On Android these include the Android
+              advertising ID where available and, where applicable, identifiers
+              related to accounts signed in on the device; the SDK also uses app
+              set ID for permitted purposes such as analytics and fraud
+              prevention. On iOS they can include identifiers limited to this
+              app or its developer. Advertising data is used to deliver and
+              measure ads, maintain the service and prevent fraud, with
+              personalisation depending on applicable consent and settings. The
+              game does not request precise GPS location.
+            </p>
+            <p>
+              AdMob can also offer an ad request to other advertising companies
+              that bid for it through Google’s mediation. Google runs the
+              auction. Each company that takes part receives information from
+              the ad request, such as IP address, device and app information
+              and, where permitted, device identifiers, to decide whether to
+              bid; the company whose ad is shown also receives what it needs to
+              deliver and measure that ad. These companies use this information
+              under their own privacy policies, and the list of companies can
+              change. Where a regional advertising privacy message is shown, it
+              lists the advertising partners. Google states that ad requests
+              with child-directed treatment, which the game requests for every
+              player under 16, are not sent to these bidders.
             </p>
             <p>
               Google’s User Messaging Platform manages regional advertising
@@ -312,8 +348,9 @@
               requirements. Where required,
               <strong>Settings → Ad privacy options</strong> lets you review
               your choices. You may also use your device’s advertising controls.
-              The current iOS implementation does not request App Tracking
-              Transparency permission or access IDFA.
+              The iOS version does not ask for App Tracking Transparency
+              permission, so neither the game nor these services can read your
+              device’s advertising identifier (IDFA).
             </p>
             <p>
               From version 1.0.4, every ad request asks for content suitable for
@@ -346,7 +383,8 @@
               begins only after your confirmation; installation and restarting
               require a further choice. You can keep playing or decline an
               update. Your device’s separate automatic-update settings remain
-              controlled by Google Play.
+              controlled by Google Play. The iOS version has no in-app update
+              check; it is updated through the App Store.
             </p>
             <p>
               Update requests use device metadata, the application version and
@@ -382,9 +420,11 @@
             </h2>
             <p>
               We use Google’s Firebase services for optional analytics and crash
-              reporting, Google AdMob and its advertising partners for ads,
-              Google Play for Android updates, Gmail for support, and GitHub
-              Pages for this website. Test versions 1.0.0 to 1.0.3 also used
+              reporting; Google AdMob, its advertising partners and the
+              companies that bid through AdMob mediation for ads; Google Play
+              for Android distribution and updates; Apple’s App Store for iOS
+              distribution; Gmail for support; and GitHub Pages for this
+              website. Test versions 1.0.0 to 1.0.3 also used
               Unity Technologies for engine diagnostics. Each
               receives the information needed for the relevant service. Google’s
               advertising partners are described in the consent interface where
@@ -589,16 +629,22 @@
               requires a higher age for valid consent, that requirement applies.
             </p>
             <p>
-              From version 1.0.4, the game asks for your birth year once, when
-              you first open it. Only an age range (under 13, 13 to 15, or 16
-              and over) is kept on your device; the year itself is not stored.
+              From version 1.0.4, the game asks your age once, when you first
+              open it. From version 1.0.6 you choose it on a slider from 0 to
+              100+; versions 1.0.4 and 1.0.5 on Android asked for a birth year
+              instead. Only an age range
+              (under 13, 13 to 15, or 16 and over) is kept on your device; your
+              exact age or birth year is not stored. If you answered in an
+              earlier version, you are not asked again.
               If you are under 16, play statistics and crash reports stay off
               and are not offered, and the game asks Google’s ad service to
               apply the child protections described in the advertising section.
               That setting tells the ad service that the protections apply;
-              neither your birth year nor your age range is sent to us or our
-              providers. The range is kept when you reset game progress and is
-              removed when you uninstall the game or clear its data.
+              neither your age nor your age range itself is sent to us or our
+              providers; only the under-16 protection setting reaches the ad
+              service. The range is kept when you reset game progress and is
+              removed when you uninstall the game or clear its data; on iOS,
+              restoring an iCloud or computer backup can bring it back.
             </p>
             <p>
               If you believe a child has provided personal information through
