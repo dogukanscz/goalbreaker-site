@@ -76,7 +76,7 @@
         <h1>Privacy policy.</h1>
         <p>What the game uses, why it uses it, and the choices you have.</p>
         <p class="effective-date">
-          Effective date: <time datetime="2026-10-21">21 October 2026</time>
+          Effective date: <time datetime="2026-10-27">27 October 2026</time>
         </p>
       </div>
       <section class="privacy-summary" aria-label="Privacy at a glance">
@@ -99,7 +99,9 @@
           <p>
             Rewarded videos are optional. From version 1.0.6, a full-screen ad
             can also appear, at most once every five won levels. The ad service
-            can process data when it preloads ads.
+            can process data when it preloads ads. From version 1.1.0 on
+            Android, optional one-time purchases can remove ads; Google Play
+            handles the payment.
           </p>
         </div>
       </section>
@@ -119,6 +121,7 @@
                 <a href="#advertising">Ads &amp; advertising privacy</a>
               </li>
               <li><a href="#updates">Google Play updates</a></li>
+              <li><a href="#purchases">Purchases</a></li>
               <li><a href="#support-data">When you contact us</a></li>
               <li>
                 <a href="#providers"
@@ -397,8 +400,49 @@
               >.
             </p>
           </section>
+          <section id="purchases">
+            <h2><span class="section-index">06</span>Purchases</h2>
+            <p>
+              From version 1.1.0 on Android, the game offers optional one-time
+              purchases that remove ads: <strong>No Ads Between Levels</strong>,
+              <strong>Remove All Ads</strong> and the
+              <strong>Starter Pack</strong> (no ads between levels, plus coins
+              and gems). Google Play handles the payment under its own terms and
+              privacy policy; we never receive your card or bank details. The iOS
+              version does not offer purchases yet.
+            </p>
+            <p>
+              To unlock a purchase, Google Play tells the game which of these
+              products your Google account owns, with a purchase token and an
+              order number. The game checks the purchase’s signature on your
+              device, keeps the ownership with your local progress so it also
+              works offline, and confirms the purchase to Google Play. We run no
+              purchase server of our own. If you reinstall the game, or play on
+              another Android device with the same Google account, Google Play
+              restores your purchases. A refunded or cancelled purchase can be removed from the game.
+            </p>
+            <p>
+              Google Play gives us order reports with details such as the order
+              number, product, price, date and the buyer’s location (country,
+              and in some reports state or postal code). We use them for
+              accounting, tax obligations, refunds and support. If you have
+              turned on play statistics, Firebase Analytics also records a
+              completed Google Play purchase automatically, with the product, its
+              price and currency. The game sends no purchase events of its own,
+              and nothing about purchases goes to Firebase while play statistics
+              are off.
+            </p>
+            <p>
+              After Remove All Ads, the game no longer starts the ad service, so
+              the processing described in the advertising section stops for new
+              ad requests (in the session of the purchase the service may already
+              be running). With No Ads Between Levels or the Starter Pack,
+              optional rewarded videos remain, and the advertising section still
+              applies.
+            </p>
+          </section>
           <section id="support-data">
-            <h2><span class="section-index">06</span>When you contact us</h2>
+            <h2><span class="section-index">07</span>When you contact us</h2>
             <p>
               If you email us, we receive your email address, the name shown by
               your email service, your message and any attachments you choose to
@@ -409,20 +453,21 @@
             <p>
               Please send only what is needed to explain the issue. We do not
               need your passwords, payment details or identity documents for an
-              ordinary support request. The current version offers no in-app
-              purchases and does not collect payment information.
+              ordinary support request. For a question about a purchase, the
+              order number from your Google Play receipt (it starts with “GPA.”)
+              helps us find it; we never need your card details.
             </p>
           </section>
           <section id="providers">
             <h2>
-              <span class="section-index">07</span>Service providers &amp;
+              <span class="section-index">08</span>Service providers &amp;
               international processing
             </h2>
             <p>
               We use Google’s Firebase services for optional analytics and crash
               reporting; Google AdMob, its advertising partners and the
               companies that bid through AdMob mediation for ads; Google Play
-              for Android distribution and updates; Apple’s App Store for iOS
+              for Android distribution, updates and purchases; Apple’s App Store for iOS
               distribution; Gmail for support; and GitHub Pages for this
               website. Test versions 1.0.0 to 1.0.3 also used
               Unity Technologies for engine diagnostics. Each
@@ -459,7 +504,7 @@
             </ul>
           </section>
           <section id="retention">
-            <h2><span class="section-index">08</span>Retention &amp; security</h2>
+            <h2><span class="section-index">09</span>Retention &amp; security</h2>
             <p>Different information has different retention periods:</p>
             <ul>
               <li>
@@ -483,6 +528,12 @@
                 requirements.
               </li>
               <li>
+                <strong>Purchase records:</strong> Google Play keeps your order
+                history under its own policy. We keep the order reports we
+                receive as long as tax and accounting law requires (in Türkiye,
+                generally five years) and as needed for refunds and support.
+              </li>
+              <li>
                 <strong>Support messages:</strong> we retain messages as needed
                 to answer your request and resolve related issues, or where
                 retention is required for legal obligations or claims.
@@ -497,7 +548,7 @@
           </section>
           <section id="choices">
             <h2>
-              <span class="section-index">09</span>Your choices &amp; deletion
+              <span class="section-index">10</span>Your choices &amp; deletion
               requests
             </h2>
             <ol class="choice-list">
@@ -557,7 +608,7 @@
           </section>
           <section id="rights">
             <h2>
-              <span class="section-index">10</span>Regional privacy rights
+              <span class="section-index">11</span>Regional privacy rights
             </h2>
             <p>
               Depending on where you live and which laws apply, you may have
@@ -570,7 +621,9 @@
             <p>
               Where applicable, we rely on your consent for optional analytics,
               crash reporting and advertising processing that requires consent.
-              We rely on legitimate interests to respond to support requests,
+              We process purchase information to provide the purchases you make
+              (performance of a contract) and keep order records because tax law
+              requires it (legal obligation). We rely on legitimate interests to respond to support requests,
               secure our services and prevent abuse, and on legal obligations
               where processing is required by law. You can object to processing
               based on legitimate interests and complain to your local data
@@ -593,7 +646,10 @@
               (KVKK) applies to our processing, and we are the data controller.
               Optional play statistics and crash reports rely on your explicit
               consent, which you give or withdraw with their switches in
-              <strong>Settings → Data &amp; privacy</strong>. Under Article 11
+              <strong>Settings → Data &amp; privacy</strong>. Purchase
+              information is processed because it is necessary to perform the
+              purchase contract and, for order records, to meet our legal
+              obligations (Article 5(2)(c) and (ç)). Under Article 11
               of the law you may ask whether your personal data is processed
               and request information about it; learn the purpose of the
               processing and whether the data is used for that purpose; know
@@ -621,7 +677,7 @@
             </p>
           </section>
           <section id="children">
-            <h2><span class="section-index">11</span>Children’s privacy</h2>
+            <h2><span class="section-index">12</span>Children’s privacy</h2>
             <p>
               Goalbreaker is intended for players aged 13 and over and is not
               directed at children under 13. We do not knowingly collect
@@ -642,7 +698,10 @@
               That setting tells the ad service that the protections apply;
               neither your age nor your age range itself is sent to us or our
               providers; only the under-16 protection setting reaches the ad
-              service. The range is kept when you reset game progress and is
+              service. From version 1.1.0 on Android, purchase offers are not shown to
+              players under 13 or before the age question is answered (restoring
+              earlier purchases stays available); players aged 13 to 15 can buy
+              from the store’s Packs tab but see no pop-up offers. The range is kept when you reset game progress and is
               removed when you uninstall the game or clear its data; on iOS,
               restoring an iCloud or computer backup can bring it back.
             </p>
@@ -654,7 +713,7 @@
           </section>
           <section id="website">
             <h2>
-              <span class="section-index">12</span>Privacy on this website
+              <span class="section-index">13</span>Privacy on this website
             </h2>
             <p>
               This website uses no analytics scripts, advertising trackers,
@@ -680,7 +739,7 @@
             </p>
           </section>
           <section id="changes">
-            <h2><span class="section-index">13</span>Changes to this policy</h2>
+            <h2><span class="section-index">14</span>Changes to this policy</h2>
             <p>
               We may update this policy when the game, its services or
               applicable requirements change. The current version will remain
