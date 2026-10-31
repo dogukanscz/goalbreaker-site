@@ -76,7 +76,7 @@
         <h1>Privacy policy.</h1>
         <p>What the game uses, why it uses it, and the choices you have.</p>
         <p class="effective-date">
-          Effective date: <time datetime="2026-10-27">27 October 2026</time>
+          Effective date: <time datetime="2026-10-31">31 October 2026</time>
         </p>
       </div>
       <section class="privacy-summary" aria-label="Privacy at a glance">
@@ -99,9 +99,10 @@
           <p>
             Rewarded videos are optional. From version 1.0.6, a full-screen ad
             can also appear, at most once every five won levels. The ad service
-            can process data when it preloads ads. From version 1.1.0 on
-            Android, optional one-time purchases can remove ads; Google Play
-            handles the payment.
+            can process data when it preloads ads. On iOS, ads are
+            personalised only if you allow tracking when the game asks. From
+            version 1.1.0 on Android, optional one-time purchases can remove
+            ads; Google Play handles the payment.
           </p>
         </div>
       </section>
@@ -232,8 +233,8 @@
                 disables advertising ID collection on Android and, on both
                 platforms, denies advertising storage, advertising user data and
                 advertising personalisation for this analytics integration. On
-                iOS, Firebase Analytics can also use the identifier for vendor
-                (IDFV), an identifier limited to apps from the same developer.
+                iOS, it also turns off collection of the identifier for vendor
+                (IDFV).
               </p>
               <p>
                 Gameplay events generated before you enable analytics are not
@@ -351,9 +352,20 @@
               requirements. Where required,
               <strong>Settings → Ad privacy options</strong> lets you review
               your choices. You may also use your device’s advertising controls.
-              The iOS version does not ask for App Tracking Transparency
-              permission, so neither the game nor these services can read your
-              device’s advertising identifier (IDFA).
+            </p>
+            <p>
+              On iOS, the game asks players aged 16 or over once for Apple’s
+              App Tracking Transparency permission, after any regional
+              advertising message. Only if you allow tracking can Google and its
+              advertising partners use your device’s advertising identifier
+              (IDFA) and show personalised ads, subject to your other
+              advertising choices. If you do not allow it, or are not asked
+              (players under 16, or after refusing every purpose in the
+              European advertising message), every ad request from the game
+              asks for non-personalised ads, whatever you choose in other
+              privacy options, and the IDFA is not available. You can change
+              your answer at any time in iOS Settings → Privacy &amp; Security →
+              Tracking.
             </p>
             <p>
               From version 1.0.4, every ad request asks for content suitable for
@@ -568,8 +580,10 @@
                 <strong>Advertising choices</strong>
                 <p>
                   Use <strong>Ad privacy options</strong> in Settings when
-                  available, and your device’s advertising controls. These
-                  choices are separate from optional Firebase sharing.
+                  available, and your device’s advertising controls. On iOS,
+                  you can also allow or stop tracking in iOS Settings → Privacy
+                  &amp; Security → Tracking. These choices are separate from
+                  optional Firebase sharing.
                 </p>
               </li>
               <li>
@@ -637,7 +651,9 @@
               Advertising disclosures to partners can qualify as “sale” or
               “sharing” under some laws, even without a direct payment for the
               data. Use the advertising privacy options offered in the game, or
-              contact us to exercise applicable rights or appeal a decision. We
+              contact us to exercise applicable rights or appeal a decision. On
+              iOS, if you do not allow tracking, ad requests from the game ask
+              for non-personalised ads. We
               do not discriminate against you for exercising privacy rights.
             </p>
             <h3>Türkiye</h3>
