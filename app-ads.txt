@@ -168,3 +168,4 @@ pubmatic.com, 160456, RESELLER, 5d62403b186f2ace
 openx.com, 634324080, DIRECT, 6a698e2ec38604c6
 monetrix.ai, 10761, RESELLER
 start.io, 131192070, RESELLER
+playdigo.com, 1965, RESELLER
