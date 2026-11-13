@@ -76,7 +76,7 @@
         <h1>Privacy policy.</h1>
         <p>What the game uses, why it uses it, and the choices you have.</p>
         <p class="effective-date">
-          Effective date: <time datetime="2026-11-10">10 November 2026</time>
+          Effective date: <time datetime="2026-11-13">13 November 2026</time>
         </p>
       </div>
       <section class="privacy-summary" aria-label="Privacy at a glance">
@@ -101,8 +101,9 @@
             can also appear, at most once every five won levels. The ad service
             can process data when it preloads ads. On iOS, ads are
             personalised only if you allow tracking when the game asks. From
-            version 1.1.0 on Android, optional one-time purchases can remove
-            ads; Google Play handles the payment.
+            version 1.1.0 on Android and version 1.2.1 on iOS, optional
+            one-time purchases can remove ads; Google Play or Apple’s App
+            Store handles the payment.
           </p>
         </div>
       </section>
@@ -431,40 +432,67 @@
           <section id="purchases">
             <h2><span class="section-index">06</span>Purchases</h2>
             <p>
-              From version 1.1.0 on Android, the game offers optional one-time
-              purchases that remove ads: <strong>No Ads Between Levels</strong>,
-              <strong>Remove All Ads</strong> and the
+              From version 1.1.0 on Android and version 1.2.1 on iOS, the game
+              offers optional one-time purchases that remove ads:
+              <strong>No Ads Between Levels</strong>,
+              <strong>Remove All Ads</strong> (with a lower-priced upgrade for
+              owners of No Ads Between Levels or the Starter Pack) and the
               <strong>Starter Pack</strong> (no ads between levels, plus coins
-              and gems). Google Play handles the payment under its own terms and
-              privacy policy; we never receive your card or bank details. The iOS
-              version does not offer purchases yet.
+              and gems). None of them is a subscription. Google Play or Apple’s
+              App Store handles the payment under its own terms and privacy
+              policy; we never receive your card or bank details.
             </p>
             <p>
-              To unlock a purchase, Google Play tells the game which of these
-              products your Google account owns, with a purchase token and an
-              order number. The game checks the purchase’s signature on your
-              device, keeps the ownership with your local progress so it also
-              works offline, and confirms the purchase to Google Play. We run no
-              purchase server of our own. If you reinstall the game, or play on
-              another Android device with the same Google account, Google Play
-              restores your purchases. A refunded or cancelled purchase can be removed from the game.
+              <strong>On Android</strong>, Google Play tells the game which of
+              these products your Google account owns, with a purchase token and
+              an order number. The game checks the purchase’s signature on your
+              device and confirms the purchase to Google Play. If you reinstall
+              the game, or play on another Android device with the same Google
+              account, Google Play restores your purchases.
+            </p>
+            <p>
+              <strong>On iOS</strong>, the game uses Apple’s StoreKit 2. The App
+              Store on your device tells the game which of these products your
+              Apple Account owns; the game counts only purchases that StoreKit
+              has verified as signed by Apple and not refunded, and confirms
+              them to the App Store. To do so it handles the product identifier
+              and a shortened, one-way code made from the transaction number;
+              it saves which products you own, not transaction numbers.
+              <strong>Restore purchases</strong> asks the App Store to
+              check your Apple Account again, which may ask you to sign in.
+              If Ask to Buy is on for your account, a purchase waits until a
+              parent or guardian approves it. These purchases are not shared
+              through Family Sharing.
+            </p>
+            <p>
+              On both platforms, the game keeps the ownership with your local
+              progress so it also works offline. We run no purchase server of
+              our own. Purchases belong to the store account you bought them
+              with and do not move between Android and iOS. A refunded or
+              cancelled purchase can be removed from the game.
             </p>
             <p>
               Google Play gives us order reports with details such as the order
               number, product, price, date and the buyer’s location (country,
-              and in some reports state or postal code). We use them for
-              accounting, tax obligations, refunds and support. If you have
-              turned on play statistics, Firebase Analytics also records a
-              completed Google Play purchase automatically, with the product, its
-              price and currency. The game sends no purchase events of its own,
-              and nothing about purchases goes to Firebase while play statistics
-              are off.
+              and in some reports state or postal code). Apple gives us sales
+              and financial reports with details such as the product, price,
+              date and the buyer’s country or region, without your name or
+              Apple Account. We use these reports for accounting, tax
+              obligations, refunds and support. If you have turned on play
+              statistics, Firebase Analytics also records a completed Google
+              Play purchase automatically, with the product, its price and
+              currency. On iOS, Firebase states that it records purchases
+              automatically only for Apple’s original purchase interface, not
+              for StoreKit 2, which the game uses. The game sends no purchase
+              events of its own on either platform, and nothing about purchases
+              goes to Firebase while play statistics are off.
             </p>
             <p>
               After Remove All Ads, the game no longer starts the ad service, so
               the processing described in the advertising section stops for new
               ad requests (in the session of the purchase the service may already
-              be running). With No Ads Between Levels or the Starter Pack,
+              be running); on iOS it then does not ask for tracking permission
+              either. With No Ads Between Levels or the Starter Pack,
               optional rewarded videos remain, and the advertising section still
               applies.
             </p>
@@ -483,7 +511,8 @@
               need your passwords, payment details or identity documents for an
               ordinary support request. For a question about a purchase, the
               order number from your Google Play receipt (it starts with “GPA.”)
-              helps us find it; we never need your card details.
+              helps us find it; for an App Store purchase, the product and the
+              date are enough. We never need your card details.
             </p>
           </section>
           <section id="providers">
@@ -495,8 +524,9 @@
               We use Google’s Firebase services for optional analytics and crash
               reporting; Google AdMob, its advertising partners and the
               companies that bid through AdMob mediation for ads; Google Play
-              for Android distribution, updates and purchases; Apple’s App Store for iOS
-              distribution; Gmail for support; and GitHub Pages for this
+              for Android distribution, updates and purchases; Apple’s App Store
+              for iOS distribution and, from version 1.2.1, purchases; Gmail for
+              support; and GitHub Pages for this
               website. Test versions 1.0.0 to 1.0.3 also used
               Unity Technologies for engine diagnostics. Each
               receives the information needed for the relevant service. We share
@@ -525,6 +555,11 @@
               <li>
                 <a href="https://firebase.google.com/support/privacy"
                   >Firebase privacy and security information</a
+                >
+              </li>
+              <li>
+                <a href="https://www.apple.com/legal/privacy/"
+                  >Apple Privacy Policy</a
                 >
               </li>
               <li>
@@ -560,10 +595,11 @@
                 requirements.
               </li>
               <li>
-                <strong>Purchase records:</strong> Google Play keeps your order
-                history under its own policy. We keep the order reports we
-                receive as long as tax and accounting law requires (in Türkiye,
-                generally five years) and as needed for refunds and support.
+                <strong>Purchase records:</strong> Google Play and Apple keep
+                your order history under their own policies. We keep the order,
+                sales and financial reports we receive as long as tax and
+                accounting law requires (in Türkiye, generally five years) and
+                as needed for refunds and support.
               </li>
               <li>
                 <strong>Support messages:</strong> we retain messages as needed
@@ -735,7 +771,8 @@
               That setting tells the ad service that the protections apply;
               neither your age nor your age range itself is sent to us or our
               providers; only the under-16 protection setting reaches the ad
-              service. From version 1.1.0 on Android, purchase offers are not shown to
+              service. From version 1.1.0 on Android and version 1.2.1 on iOS,
+              purchase offers are not shown to
               players under 13 or before the age question is answered (restoring
               earlier purchases stays available); players aged 13 to 15 can buy
               from the store’s Packs tab but see no pop-up offers. The range is kept when you reset game progress and is
