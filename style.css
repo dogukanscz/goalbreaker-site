@@ -2118,7 +2118,7 @@ p + p {
   }
 }
 
-/* ---------- Google Play badge (home and Goalbreaker) ---------- */
+/* ---------- Store badges (home and Goalbreaker) ---------- */
 .store-badge {
   display: inline-block;
   flex-shrink: 0;
@@ -2130,6 +2130,10 @@ p + p {
 }
 .store-badge:hover {
   box-shadow: 0 4px 0 #0002;
+}
+/* Apple's badge is an uncropped SVG with rounder corners than Google's. */
+.store-badge-apple {
+  border-radius: 11px;
 }
 .game-hero-actions {
   display: flex;
