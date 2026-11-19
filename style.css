@@ -802,6 +802,13 @@ p + p {
   color: #465c4f;
   margin-top: 9px;
 }
+.privacy-summary.summary-quad {
+  grid-template-columns: repeat(2, 1fr);
+  row-gap: 28px;
+}
+.privacy-summary.summary-quad > div:nth-child(2n) {
+  border-right: 0;
+}
 .privacy-layout {
   display: grid;
   grid-template-columns: 250px minmax(0, 1fr);
@@ -1375,6 +1382,10 @@ p + p {
   .privacy-summary p {
     font-size: 0.86rem;
     margin-top: 5px;
+  }
+  .privacy-summary.summary-quad {
+    grid-template-columns: 1fr;
+    row-gap: 0;
   }
   .policy-nav ol {
     grid-template-columns: 1fr;

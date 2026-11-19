@@ -8,7 +8,7 @@
     <title>Goalbreaker Privacy Policy — Talvero Games</title>
     <meta
       name="description"
-      content="How Goalbreaker handles local progress, optional Firebase statistics and crash reports, AdMob advertising, support emails and your privacy choices."
+      content="How Goalbreaker handles local progress, the optional leaderboard, optional Firebase statistics and crash reports, AdMob advertising, support emails and your privacy choices."
    >
     <link
       rel="canonical"
@@ -22,7 +22,7 @@
    >
     <meta
       property="og:description"
-      content="How Goalbreaker handles local progress, optional Firebase statistics and crash reports, AdMob advertising, support emails and your privacy choices."
+      content="How Goalbreaker handles local progress, the optional leaderboard, optional Firebase statistics and crash reports, AdMob advertising, support emails and your privacy choices."
    >
     <meta
       property="og:url"
@@ -47,7 +47,7 @@
       type="font/woff2"
       crossorigin
    >
-    <link rel="stylesheet" href="../../style.css?v=20261007">
+    <link rel="stylesheet" href="../../style.css?v=20261119">
   </head>
   <body>
     <a class="skip-link" href="#main">Skip to content</a>
@@ -76,14 +76,30 @@
         <h1>Privacy policy.</h1>
         <p>What the game uses, why it uses it, and the choices you have.</p>
         <p class="effective-date">
-          Effective date: <time datetime="2026-11-13">13 November 2026</time>
+          Effective date: [GG Ay 2026]
         </p>
       </div>
-      <section class="privacy-summary" aria-label="Privacy at a glance">
+      <div class="data-detail">
+        <p>
+          <strong>What changed on [GG Ay 2026]:</strong> version 1.3.0 adds an
+          optional leaderboard (<a href="#leaderboard">section 07</a>) and, on
+          iPhone, a check for a newer game version
+          (<a href="#updates">section 05</a>). We added our postal address and
+          rewrote the Türkiye section, with a Turkish information notice
+          (<a href="../../tr/goalbreaker/aydinlatma-metni/" hreflang="tr"
+            >Aydınlatma Metni</a
+          >).
+        </p>
+      </div>
+      <section class="privacy-summary summary-quad" aria-label="Privacy at a glance">
         <div>
           <span class="summary-mark" aria-hidden="true">01</span
           ><strong>Your progress stays local.</strong>
-          <p>No player account or cloud-save service of our own.</p>
+          <p>
+            No cloud save. If you are 16 or over and join the optional
+            leaderboard, it creates an anonymous ID and shows your nickname,
+            kit and scores (section 07).
+          </p>
         </div>
         <div>
           <span class="summary-mark" aria-hidden="true">02</span
@@ -106,6 +122,16 @@
             Store handles the payment.
           </p>
         </div>
+        <div>
+          <span class="summary-mark" aria-hidden="true">04</span
+          ><strong>The leaderboard is opt-in.</strong>
+          <p>
+            Players aged 16 and over can join with a nickname. Players aged 13
+            to 15 can only watch; under 13, there is no leaderboard. In the EEA,
+            the UK and Switzerland it is view-only. Leave and delete your
+            leaderboard data in Settings.
+          </p>
+        </div>
       </section>
       <div class="privacy-layout">
         <aside class="policy-nav">
@@ -122,8 +148,9 @@
               <li>
                 <a href="#advertising">Ads &amp; advertising privacy</a>
               </li>
-              <li><a href="#updates">Google Play updates</a></li>
+              <li><a href="#updates">App updates</a></li>
               <li><a href="#purchases">Purchases</a></li>
+              <li><a href="#leaderboard">Leaderboard</a></li>
               <li><a href="#support-data">When you contact us</a></li>
               <li>
                 <a href="#providers"
@@ -164,34 +191,26 @@
                 >dogukangamesdev@gmail.com</a
               >.
             </p>
+            <p>Address for written requests: [ADRES ya da KEP].</p>
           </section>
           <section id="local-data">
             <h2>
               <span class="section-index">02</span>Your game, on your device
             </h2>
             <p>
-              Goalbreaker does not require a player account. It stores your
-              level progress, stars, coins, gems, unlocked items, trophies,
-              daily rewards and preferences in the app’s local storage. We do
-              not upload your save file to a game server or provide our own
-              cloud-save service.
+              Goalbreaker does not require a player account. It stores your level progress, stars, coins, gems, unlocked items, trophies, daily rewards, preferences and the totals it counts for the leaderboard in the app’s local storage. We do not upload your save file to a game server or provide our own cloud-save service. If you are 16 or over and join the optional leaderboard, the game sends a nickname, your kit and your scores to our leaderboard database; <a href="#leaderboard">section 07</a> explains what it sends and how to delete it.
             </p>
             <p>
-              <strong>Settings → Reset progress</strong> clears local game
-              progress. Uninstalling the app normally removes its local storage,
+              <strong>Settings → Reset progress</strong> clears local game progress. It does not clear the leaderboard totals the game keeps on your device or your leaderboard identity, and it does not delete your leaderboard entries; use <strong>Settings → Leave the ranking and delete my data</strong> for that (<a href="#leaderboard">section 07</a>). Uninstalling the app normally removes its local storage,
               but your operating system may retain or restore app data through
               device backups. Backups are controlled by your device settings and
               platform provider. From version 1.0.4 on Android, the game limits
               Android backup and phone-to-phone transfer to its progress file:
-              settings, your age range and the identifiers used by the services
-              below are not included, and on Android 9 and later the progress
-              file goes to cloud backup only when that backup is end-to-end
-              encrypted. On iOS, the game does not limit backups: iCloud and
+              settings, your age range and the identifiers used by Firebase Analytics, Firebase Crashlytics and AdMob are not included. If you have joined the leaderboard, the progress file also holds the key to your leaderboard identity, so a backup or phone-to-phone transfer can bring that identity back on a restored or new device. On Android 9 and later the progress file goes to cloud backup only when that backup is end-to-end encrypted. On iOS, the game does not limit backups: iCloud and
               computer backups can include the progress file, the game’s
               settings (including your age range) and identifiers stored by the
-              services below, so restoring a backup can bring them back.
-              Resetting or uninstalling the game does not
-              delete data already sent to the services below.
+              services below, so restoring a backup can bring them back. This includes your leaderboard identity if you have joined.
+              Resetting or uninstalling the game does not delete data already sent to the services below, including your leaderboard entries. Delete your leaderboard data in the game before you uninstall it (<a href="#leaderboard">section 07</a>).
             </p>
             <p>
               From version 1.0.4, the main screen of the game shows a link to
@@ -236,8 +255,7 @@
                 language, an app-instance identifier, Google Play install
                 referral information (Android only) and approximate location (such
                 as city, region and country) derived from an IP address. We use it to understand how the game is played and
-                improve difficulty and rewards. We do not add a player name,
-                email address or account ID. Our Firebase Analytics configuration
+                improve difficulty and rewards. We do not add your leaderboard nickname or leaderboard ID, an email address or an account ID. Our Firebase Analytics configuration
                 disables advertising ID collection on Android and, on both
                 platforms, denies advertising storage, advertising user data and
                 advertising personalisation for this analytics integration. On
@@ -407,7 +425,7 @@
             </p>
           </section>
           <section id="updates">
-            <h2><span class="section-index">05</span>Google Play updates</h2>
+            <h2><span class="section-index">05</span>App updates</h2>
             <p>
               From version 1.0.3 on Android, the game can check Google Play for
               an eligible update and offer Google’s optional in-app update flow.
@@ -415,8 +433,7 @@
               begins only after your confirmation; installation and restarting
               require a further choice. You can keep playing or decline an
               update. Your device’s separate automatic-update settings remain
-              controlled by Google Play. The iOS version has no in-app update
-              check; it is updated through the App Store.
+              controlled by Google Play. On iOS, updates are installed through the App Store.
             </p>
             <p>
               Update requests use device metadata, the application version and
@@ -427,6 +444,20 @@
               <a href="https://developer.android.com/guide/playcore/in-app-updates#data-safety"
                 >Google’s in-app update data-safety information</a
               >.
+            </p>
+            <p>
+              From version 1.3.0, the iOS version asks Apple’s public App Store
+              lookup service whether a newer version of the game exists, after
+              the launch privacy steps (the age question and, where they apply,
+              the advertising message and Apple’s tracking prompt). The request
+              names only the game; it carries no identifier of you or your
+              device. From the answer, the game uses only the version number and
+              the address of the game’s App Store page. As with any internet
+              request, Apple receives your IP address, under its own privacy
+              policy. If a newer version exists, the game can show a panel that
+              opens the App Store page. The panel is optional: you can dismiss
+              it, and LATER keeps it from showing again for that version for 3
+              days. Updating stays in the App Store.
             </p>
           </section>
           <section id="purchases">
@@ -466,8 +497,7 @@
             </p>
             <p>
               On both platforms, the game keeps the ownership with your local
-              progress so it also works offline. We run no purchase server of
-              our own. Purchases belong to the store account you bought them
+              progress so it also works offline. We run no purchase server of our own. Nothing about your purchases or your coins is sent to the leaderboard. Purchases belong to the store account you bought them
               with and do not move between Android and iOS. A refunded or
               cancelled purchase can be removed from the game.
             </p>
@@ -497,8 +527,357 @@
               applies.
             </p>
           </section>
+          <section id="leaderboard">
+            <h2><span class="section-index">07</span>Leaderboard</h2>
+            <p>
+              From version 1.3.0, Goalbreaker has an optional leaderboard, shown
+              in the game as RANKING, with weekly and all-time tables for stars,
+              levels and trophies (trophy points). It is the game’s only feature
+              that sends information about you to a database we run. Nothing
+              about you is sent to it unless you are 16 or over, are outside the
+              regions named below, and choose to join.
+            </p>
+            <h3>Who can join</h3>
+            <ul>
+              <li>
+                Players who answered the game’s age question with 16 or over can
+                join from the ranking screen. The game keeps only your age range
+                on your device and does not send your age. If you are 16 or 17,
+                we suggest you talk to a parent or guardian before joining.
+              </li>
+              <li>
+                Players aged 13 to 15 can view the tables but cannot join. For
+                them the game sends no leaderboard ID, nickname or score, and
+                shows only nicknames we have reviewed; other names appear as
+                “Player”. They can report a nickname by email.
+              </li>
+              <li>
+                If you answered that you are under 13, the leaderboard does not
+                exist for you: the game does not show it and sends no
+                leaderboard request of any kind.
+              </li>
+              <li>
+                In the European Economic Area, the United Kingdom and
+                Switzerland, the leaderboard is view-only: you cannot join, no
+                leaderboard identity is created, the game sends nothing about
+                you, and nicknames are not shown (each row reads “Player” with a
+                four-digit number, such as “Player 1234”, which your device
+                derives only for display; it does not identify the player, and
+                no player names or IDs are shown there). The game decides this
+                on your device from device signals only: on Android, the country
+                of the mobile network, then the country of the SIM card, then
+                the device’s region setting; on iPhone, the device’s region
+                setting. If any available signal names one of these countries,
+                or no signal is available, the leaderboard is view-only. The
+                game reads these signals on your device, keeps them in memory
+                only, and never stores or sends them. If we open the leaderboard
+                in these regions later, we will update this policy first.
+              </li>
+            </ul>
+            <p>
+              Before you can type a nickname, the game shows a summary of the
+              leaderboard rules with links to the full
+              <a href="../leaderboard-rules/">leaderboard rules</a> and to this
+              section. You join by ticking “I accept the ranking rules”, a box
+              that starts unticked. Ticking it accepts the rules of the
+              leaderboard, the terms on which we run it for you; it is not a
+              consent to this policy.
+            </p>
+            <div class="data-detail">
+              <h3>What the leaderboard stores, and who can read it</h3>
+              <p>
+                When you join, the game creates an anonymous leaderboard
+                identity with Google’s Firebase Authentication: a random ID. It
+                does not ask for an email address, password or phone number, and
+                it does not use your device’s advertising ID or other device
+                identifiers. The game keeps the key to this identity in its
+                progress file on your device; device backups carry it, so
+                restoring a backup can bring the identity back
+                (<a href="#local-data">section 02</a>).
+              </p>
+              <p>For each player who joins, the leaderboard stores:</p>
+              <ul>
+                <li>
+                  the nickname you choose, a simplified copy of it used for
+                  filtering and search, and whether we have reviewed it;
+                </li>
+                <li>the ID of the kit your player wears;</li>
+                <li>
+                  your weekly and all-time scores for stars, levels and trophy
+                  points, and, behind the trophy points, the six weekly trophy
+                  steps of the current week and how many bronze, silver and gold
+                  collection trophies you hold;
+                </li>
+                <li>
+                  when you joined, when each score last rose (used to break
+                  ties), when your game last sent scores, and when you last
+                  changed your nickname;
+                </li>
+                <li>
+                  the version number of the game and the version of the ranking
+                  rules you accepted;
+                </li>
+                <li>
+                  your random ID, which is also the name of your entry in the
+                  database;
+                </li>
+                <li>
+                  a check value: a one-way code (a hash) computed from your
+                  random ID and a secret that only your device shows, taken
+                  together, so that one guess cannot unlock every player’s code.
+                  It lets us check that an emailed deletion request comes from
+                  you. The game never sends the secret itself; it only shows it
+                  to you as part of your ranking code.
+                </li>
+              </ul>
+              <p>
+                Everything in this list is public. Other players see your
+                nickname, kit, scores and rank in the game; the weekly winner of
+                each table shows a crown for one week. Anyone who reads the
+                leaderboard database directly, outside the game, can read every
+                item in the list. Do not put personal information, such as your
+                full name, phone number, address or social media handle, in your
+                nickname.
+              </p>
+              <p>
+                Not public: reports (who reported whom), your daily report
+                counter, our moderation records and our moderation and deletion
+                log. Only the developer can read them.
+              </p>
+              <p>
+                We never collect for the leaderboard your real name, email
+                address, phone number, contacts, photos, location, advertising ID
+                or purchase information. No coin balance, earned or bought, is
+                sent to it.
+              </p>
+              <p>
+                The game counts your scores on your device from your progress.
+                It sends them after you leave the results of a won level (at most
+                about once a minute), when you open the ranking screen, and when
+                the game starts with an update it could not send earlier. Your
+                save file itself is not uploaded.
+              </p>
+            </div>
+            <div class="data-detail">
+              <h3>Where it is stored</h3>
+              <p>
+                Leaderboard entries, reports and moderation records are stored in
+                Google Cloud Firestore in the game’s Firebase project, in
+                Frankfurt, Germany. Your leaderboard identity (the random ID and
+                the key that lets your game use it) is held by Firebase
+                Authentication, which Google runs from data centres in the
+                United States. Google acts as our service provider (data
+                processor) for both, under its data processing terms, which
+                include the EU standard contractual clauses and the EU–U.S. Data
+                Privacy Framework. We read moderation data from Türkiye.
+              </p>
+              <p>
+                To answer the game’s requests, Google receives your device’s IP
+                address and basic device and connection information, such as the
+                app’s user-agent string. This also happens when a player who has
+                not joined opens the tables. Firebase Authentication keeps logged
+                IP addresses for a few weeks. We do not store IP addresses in the
+                leaderboard database, and we keep the database’s access logs,
+                which would record them, turned off. When we or the game delete
+                leaderboard data, Google removes it from its live systems and
+                finishes removing it from its backup systems within 180 days.
+              </p>
+            </div>
+            <h3>Why we use it</h3>
+            <p>
+              We use this information to run the tables and ranks, to break
+              ties, to give the weekly rewards, to keep scores fair, to moderate
+              nicknames, to handle reports and to answer requests. We do not use
+              leaderboard information for advertising or analytics: we do not
+              send it to AdMob or advertising partners, and the game never
+              passes your leaderboard ID, its key or your nickname to Firebase
+              Analytics, Crashlytics or the ad service.
+            </p>
+            <h3>Nicknames and moderation</h3>
+            <p>
+              When you set a nickname, the game and the database check it
+              automatically against character rules and a list of blocked words;
+              a nickname that passes appears straight away. You can change your
+              nickname once a day. Every other moderation decision is made by a
+              person, the developer, on a moderation page that only the developer
+              can open: renaming a nickname and locking it, removing a player
+              from a week’s tables, and banning a leaderboard identity. A banned
+              identity cannot send scores and receives no leaderboard rewards.
+              When we act on your entry, the game tells you what was done, which
+              rule it broke (offensive or inappropriate name; pretending to be
+              someone else; cheating or impossible score; something else), that a
+              person decided, and how to contest the decision by email. We keep
+              no free-text notes about players.
+            </p>
+            <h3>Reporting and hiding</h3>
+            <p>
+              If you have joined, you can report a player from the ranking
+              screen; a report covers the player, not only the nickname. A report
+              holds your random ID, the reported player’s random ID, the week,
+              the reason you chose and the time. A daily counter holds how many
+              reports you sent that day (at most 10) and the last player you
+              reported. The reported player is not told who reported them.
+              Players who cannot report in the game, for example players aged 13
+              to 15 or players who have not joined, can email
+              <a
+                href="mailto:dogukangamesdev@gmail.com?subject=Goalbreaker%20support"
+                >dogukangamesdev@gmail.com</a
+              >; the game opens a draft with the table, rank, nickname and date
+              and adds no ID. We aim to review reports within 24 hours; when we
+              cannot review them for a longer time, we pause the leaderboard.
+              Hiding a player is stored only on your device and is not sent to
+              us; you can show hidden players again in Settings.
+            </p>
+            <h3>Rewards</h3>
+            <p>
+              Each week the top 10 of each of the three weekly tables (stars,
+              levels and trophies) can collect coins and gems in the game during
+              the reward period (see the
+              <a href="../leaderboard-rules/">leaderboard rules</a>). Taking part
+              is free, and rewards have no cash value and cannot be exchanged for
+              money. To pay rewards, the game reads the top of each weekly table;
+              it records collected rewards in your progress file on your device.
+            </p>
+            <div class="data-detail">
+              <h3>Leaving and deleting your leaderboard data</h3>
+              <p>
+                Use <strong>Settings → Leave the ranking and delete my
+                data</strong> (the same control is also in the help (?) sheet of
+                the ranking screen). It is there whenever your game holds a
+                leaderboard identity, whatever your age range, and also while the
+                leaderboard is paused. Leaving always deletes your leaderboard
+                data; there is no way to leave and keep your entries.
+              </p>
+              <p>
+                Before anything is deleted, the game asks you to confirm and
+                tells you what is removed. If you confirm, your entries leave
+                every table at once: weekly entries whose reward period is over
+                are deleted, and your other entries become empty markers that
+                hold only your random ID and the time of deletion. The game then
+                deletes your leaderboard identity from Firebase Authentication.
+                If you are offline or the game closes first, it keeps trying by
+                itself and tells you when the deletion has finished. If Google
+                does not allow the empty identity to be deleted at that moment,
+                the game forgets it and we delete it within 30 days. In the rare
+                case that the game cannot finish, it tells you so and asks you to
+                email us your ranking code, and we finish the deletion.
+              </p>
+              <p>
+                If the age answer stored on your device is below 16 and the game
+                still holds a leaderboard identity (for example after a backup is
+                restored and the age question is answered again), the game
+                deletes that identity’s leaderboard data by itself, in the same
+                way, after the launch privacy steps. Players aged 13 to 15 are
+                told once; for players under 13 the game shows nothing.
+              </p>
+              <p>What stays after a deletion, and for how long:</p>
+              <ul>
+                <li>
+                  the empty markers, which keep a deleted entry from coming back:
+                  removed within 30 days, together with the reports you filed and
+                  your report counter;
+                </li>
+                <li>
+                  reports other players filed about you: deleted when we close
+                  them, at the latest after 90 days; a deleted identity can no
+                  longer file reports, and where another player’s daily report
+                  counter named you, that entry is blanked;
+                </li>
+                <li>
+                  if your identity was banned, the ban record, while the ban
+                  applies;
+                </li>
+                <li>
+                  a line in our moderation and deletion log (a short code, the
+                  action, a reason code and the date): 12 months;
+                </li>
+                <li>Google’s backups: up to 180 days, as described above.</li>
+              </ul>
+              <p>
+                Unclaimed rewards are lost, and your game progress stays. If you
+                join again later, you start with a new identity, and your scores
+                are sent again from your device.
+              </p>
+            </div>
+            <h3>Ranking code</h3>
+            <p>
+              While your game holds a leaderboard identity, Settings shows your
+              ranking code under the delete control. It has two parts: a short
+              part that lets us find your entries, and a secret part that only
+              your device shows. Tap the code to copy it. Do not share it with
+              anyone but us.
+            </p>
+            <p>
+              If your game loses a leaderboard identity, or its entries could
+              not be removed, the game keeps that identity’s full ranking code
+              (up to three) on your device under Settings → Earlier ranking
+              codes, so you can still ask us by email to delete that data. You
+              can clear these codes there; this removes them from your device
+              only.
+            </p>
+            <p>
+              To have your leaderboard data deleted without the game, for example
+              after uninstalling it, email
+              <a
+                href="mailto:dogukangamesdev@gmail.com?subject=Goalbreaker%20privacy%20request"
+                >dogukangamesdev@gmail.com</a
+              >
+              with the subject “Goalbreaker privacy request” and your whole
+              ranking code. The secret part shows that the request comes from
+              you; we then delete your data as described above. We may ask for
+              more information to confirm a request, and we answer within 30
+              days. If you no longer have the code, for example after
+              reinstalling without a backup, write to us with your nickname. If
+              we cannot confirm that the entries are yours, we replace the
+              nickname with a neutral one and do not delete the scores, because
+              we will not delete someone’s scores at another person’s request.
+              The
+              <a href="../leaderboard-rules/#delete">leaderboard rules</a> repeat
+              these steps.
+            </p>
+            <h3>Retention</h3>
+            <ul>
+              <li>
+                Weekly entries: kept for the week and the 14-day reward period
+                after it, then deleted, at the latest 45 days after the week
+                ends.
+              </li>
+              <li>
+                Your all-time entry and your leaderboard identity: until you
+                delete them, or ask us to; an all-time entry that receives no new
+                score for 24 months is deleted, and the anonymous sign-in
+                identity behind it is deleted as well.
+              </li>
+              <li>After a deletion: as listed in the box above.</li>
+              <li>
+                Reports: deleted when we close them, at the latest after 90 days.
+                Report counters: 7 days.
+              </li>
+              <li>
+                Our moderation and deletion log: 12 months. A ban: while it
+                applies.
+              </li>
+              <li>
+                Support emails, including leaderboard requests: 12 months after
+                the request is closed.
+              </li>
+            </ul>
+            <p>
+              We do not promise to restore leaderboard entries or scores that
+              are lost.
+            </p>
+            <h3>Contact</h3>
+            <p>
+              Questions about the leaderboard, its rules or your data:
+              <a
+                href="mailto:dogukangamesdev@gmail.com?subject=Goalbreaker%20support"
+                >dogukangamesdev@gmail.com</a
+              >. The help button (?) on the ranking screen shows this address
+              too, with links to the leaderboard rules and the help page.
+            </p>
+          </section>
           <section id="support-data">
-            <h2><span class="section-index">07</span>When you contact us</h2>
+            <h2><span class="section-index">08</span>When you contact us</h2>
             <p>
               If you email us, we receive your email address, the name shown by
               your email service, your message and any attachments you choose to
@@ -517,25 +896,26 @@
           </section>
           <section id="providers">
             <h2>
-              <span class="section-index">08</span>Service providers &amp;
+              <span class="section-index">09</span>Service providers &amp;
               international processing
             </h2>
             <p>
-              We use Google’s Firebase services for optional analytics and crash
-              reporting; Google AdMob, its advertising partners and the
-              companies that bid through AdMob mediation for ads; Google Play
-              for Android distribution, updates and purchases; Apple’s App Store
-              for iOS distribution and, from version 1.2.1, purchases; Gmail for
-              support; and GitHub Pages for this
+              We use Google’s Firebase services for optional analytics and crash reporting and, from version 1.3.0, Firebase Authentication and Cloud Firestore for the optional leaderboard; Google AdMob, its advertising partners and the companies that bid through AdMob mediation for ads; Google Play for Android distribution, updates and purchases; Apple’s App Store for iOS distribution, purchases (from version 1.2.1) and, from version 1.3.0, the update check; Gmail for support; and GitHub Pages for this
               website. Test versions 1.0.0 to 1.0.3 also used
               Unity Technologies for engine diagnostics. Each
-              receives the information needed for the relevant service. We share
-              information only with these providers and expect them to protect
-              it to the same or an equal standard as this policy describes and
+              receives the information needed for the relevant service. We share information only with these providers, except the leaderboard entries you choose to publish by joining, which other players and anyone who reads the leaderboard can see (<a href="#leaderboard">section 07</a>). We expect these providers to protect it to the same or an equal standard as this policy describes and
               as the App Store Review Guidelines and applicable law require.
               Google’s
               advertising partners are described in the consent interface where
               available.
+            </p>
+            <p>
+              Leaderboard entries are stored in Frankfurt, Germany, and
+              leaderboard sign-in is processed by Google in the United States;
+              Google acts as our processor for both under its data processing
+              terms, which include the EU standard contractual clauses and the
+              EU–U.S. Data Privacy Framework. We read leaderboard moderation data
+              from Türkiye.
             </p>
             <p>
               These providers may process information outside your country,
@@ -571,12 +951,11 @@
             </ul>
           </section>
           <section id="retention">
-            <h2><span class="section-index">09</span>Retention &amp; security</h2>
+            <h2><span class="section-index">10</span>Retention &amp; security</h2>
             <p>Different information has different retention periods:</p>
             <ul>
               <li>
-                <strong>Local game data:</strong> stays on your device until
-                reset or removed, subject to device backup behaviour.
+                <strong>Local game data:</strong> stays on your device until removed, subject to device backup behaviour; <strong>Reset progress</strong> keeps the leaderboard totals and identity (<a href="#leaderboard">section 07</a>).
               </li>
               <li>
                 <strong>Crash reports:</strong> Google states that Crashlytics
@@ -602,21 +981,32 @@
                 as needed for refunds and support.
               </li>
               <li>
-                <strong>Support messages:</strong> we retain messages as needed
-                to answer your request and resolve related issues, or where
-                retention is required for legal obligations or claims.
+                <strong>Leaderboard:</strong> weekly entries are deleted after the
+                week’s 14-day reward period, at the latest 45 days after the week
+                ends; your all-time entry and identity stay until you delete
+                them, and an all-time entry that receives no new score for 24
+                months is deleted together with the anonymous sign-in identity
+                behind it; after a deletion, empty markers and the identity are
+                removed within 30 days; reports are deleted when closed and at
+                the latest after 90 days; report counters after 7 days; our
+                moderation and deletion log after 12 months; a ban stays while it
+                applies. Google keeps logged sign-in IP addresses for a few weeks
+                and removes deleted data from its backups within 180 days.
+                <a href="#leaderboard">section 07</a> has the details.
+              </li>
+              <li>
+                <strong>Support messages:</strong> we keep messages for 12 months after your request is closed, to answer follow-up questions and show how a request was handled, unless a legal obligation or a claim requires longer.
               </li>
             </ul>
             <p>
-              We use access controls to protect the services we manage. Firebase
-              and Google Mobile Ads use encrypted connections for data in
+              We use access controls to protect the services we manage. Only the developer can access the game’s Firebase project, with a Google account protected by 2-step verification. The leaderboard database accepts a change only from the identity that owns the entry, within limits set by its server rules, and moderation needs the developer’s Google sign-in. We do not store IP addresses in the leaderboard. Firebase and Google Mobile Ads use encrypted connections for data in
               transit, and this website uses HTTPS. No storage or transmission
               method can guarantee absolute security.
             </p>
           </section>
           <section id="choices">
             <h2>
-              <span class="section-index">10</span>Your choices &amp; deletion
+              <span class="section-index">11</span>Your choices &amp; deletion
               requests
             </h2>
             <ol class="choice-list">
@@ -644,6 +1034,19 @@
                 </p>
               </li>
               <li>
+                <strong>Leaderboard</strong>
+                <p>
+                  Joining is optional and only for players aged 16 and over
+                  outside the EEA, the UK and Switzerland.
+                  <strong>Settings → Leave the ranking and delete my
+                  data</strong> removes your entries, your nickname and your
+                  leaderboard identity; it stays available whenever your game
+                  holds a leaderboard identity (<a href="#leaderboard">section 07</a>).
+                  Hidden players can be shown again in
+                  <strong>Settings → Show hidden players</strong>.
+                </p>
+              </li>
+              <li>
                 <strong>Local progress and backups</strong>
                 <p>
                   Use <strong>Settings → Reset progress</strong> to clear
@@ -667,8 +1070,7 @@
               </li>
             </ol>
             <p>
-              Because Goalbreaker has no accounts, we may not be able to connect
-              a report to you using a device model or approximate date alone. We
+              Goalbreaker has no player accounts. If you joined the leaderboard, delete your leaderboard data in the game, or email us your ranking code from Settings (<a href="#leaderboard">section 07</a>). For other data, we may not be able to connect a request to you using a device model or approximate date alone. We
               will explain what we can identify, ask only for information
               reasonably needed to verify and handle your request, and use the
               relevant provider’s deletion tools where available. Information
@@ -679,7 +1081,7 @@
           </section>
           <section id="rights">
             <h2>
-              <span class="section-index">11</span>Regional privacy rights
+              <span class="section-index">12</span>Regional privacy rights
             </h2>
             <p>
               Depending on where you live and which laws apply, you may have
@@ -696,9 +1098,7 @@
               (performance of a contract) and keep order records because tax law
               requires it (legal obligation). We rely on legitimate interests to respond to support requests,
               secure our services and prevent abuse, and on legal obligations
-              where processing is required by law. You can object to processing
-              based on legitimate interests and complain to your local data
-              protection authority.
+              where processing is required by law. You can object to processing based on legitimate interests and complain to your local data protection authority. In the EEA, the United Kingdom and Switzerland, the leaderboard is view-only: you cannot join, no leaderboard identity is created and the game sends no leaderboard ID, nickname or score about you. When you open the tables, Google receives your IP address and basic device and connection information to answer the request, as for any internet request; we rely on our legitimate interests to show you the tables you open.
             </p>
             <h3>United States</h3>
             <p>
@@ -716,41 +1116,133 @@
             <h3>Türkiye</h3>
             <p>
               If you are in Türkiye, the Personal Data Protection Law No. 6698
-              (KVKK) applies to our processing, and we are the data controller.
-              Optional play statistics and crash reports rely on your explicit
-              consent, which you give or withdraw with their switches in
-              <strong>Settings → Data &amp; privacy</strong>. Purchase
-              information is processed because it is necessary to perform the
-              purchase contract and, for order records, to meet our legal
-              obligations (Article 5(2)(c) and (ç)). Under Article 11
-              of the law you may ask whether your personal data is processed
-              and request information about it; learn the purpose of the
-              processing and whether the data is used for that purpose; know
+              (KVKK) applies to our processing. The data controller is
+              <strong>Doğukan Saçmaözü</strong>, a natural person resident in
+              Türkiye who operates as Talvero Games; we have no representative.
+              Address for written applications: [ADRES ya da KEP]. Email:
+              <a
+                href="mailto:dogukangamesdev@gmail.com?subject=Goalbreaker%20privacy%20request"
+                >dogukangamesdev@gmail.com</a
+              >. Our information notice in Turkish (Aydınlatma Metni) gives the
+              same information:
+              <a href="../../tr/goalbreaker/aydinlatma-metni/" hreflang="tr"
+                >Aydınlatma Metni</a
+              >.
+            </p>
+            <p>
+              <strong
+                >How we collect your data, and the legal bases (Article 5 of the
+                law)</strong
+              >
+            </p>
+            <ul>
+              <li>
+                Optional play statistics and crash reports are collected
+                automatically through the app only if you turn them on, and rely
+                on your explicit consent, which you give or withdraw with their
+                switches in <strong>Settings → Data &amp; privacy</strong>.
+              </li>
+              <li>
+                Purchase information is processed because it is necessary to
+                perform the purchase contract and, for order records, to meet our
+                legal obligations (Article 5(2)(c) and (ç)).
+              </li>
+              <li>
+                Leaderboard information is collected automatically through the
+                app, only after you join. Running the tables you joined and
+                giving their rewards is necessary to perform the contract formed
+                when you accept the ranking rules (Article 5(2)(c)). Moderating
+                nicknames, handling reports, preventing cheating and abuse, and
+                keeping the minimal ban and deletion records rely on our
+                legitimate interests (Article 5(2)(f)); keeping the ban and
+                deletion markers can also be necessary to establish, exercise or
+                protect a right (Article 5(2)(e)). We do not rely on your
+                explicit consent for the leaderboard: the box you tick when
+                joining accepts the ranking rules.
+              </li>
+              <li>
+                Advertising: [HUKUKÇU OKUMASI] Showing and measuring ads that
+                keep the game free, and preventing ad fraud, rely on our
+                legitimate interests (Article 5(2)(f)); on iOS, ads are
+                personalised only if you allow tracking.
+              </li>
+              <li>
+                Support emails rely on our legitimate interests in answering you
+                (Article 5(2)(f)); requests made under this law are answered to
+                meet our legal obligations (Article 5(2)(ç)).
+              </li>
+            </ul>
+            <p><strong>Recipients</strong></p>
+            <p>
+              Google, as our service provider, for Firebase Analytics,
+              Crashlytics, Authentication and Cloud Firestore; Google AdMob and
+              its advertising partners for ads; Google Play and Apple for
+              distribution, purchases and updates; Gmail for support email.
+              Leaderboard information listed in
+              <a href="#leaderboard">section 07</a> is public: other players,
+              and anyone who reads the leaderboard, can see it. We disclose
+              information to public authorities only where the law requires it.
+            </p>
+            <p><strong>Transfers abroad</strong></p>
+            <p>
+              Leaderboard entries are stored in Frankfurt, Germany, and
+              leaderboard sign-in is processed in the United States. Firebase
+              Analytics, Crashlytics and AdMob process data in the United States
+              and in other countries where Google and its partners operate.
+              Google applies its data processing terms and its security measures
+              to these transfers. A standard contract published by the Personal
+              Data Protection Board has not been signed for them. Personal data
+              abroad may be protected by law less than in Türkiye, and
+              authorities in those countries may seek access to it.
+            </p>
+            <p><strong>Retention</strong></p>
+            <p>
+              As listed in <a href="#leaderboard">section 07</a> and
+              <a href="#retention">section 10</a>. In short: weekly leaderboard
+              entries until the end of their reward period, at the latest 45 days
+              after the week ends; your all-time entry and identity until you
+              delete them, or 24 months without a new score (the entry and its
+              anonymous sign-in identity are then deleted); after a deletion,
+              markers and the identity within 30 days; reports at the latest 90
+              days; report counters 7 days; our moderation and deletion log 12
+              months; support emails 12 months after the request is closed;
+              Google’s backups up to 180 days.
+            </p>
+            <p><strong>Your rights</strong></p>
+            <p>
+              Under Article 11 of the law you may ask whether your personal data
+              is processed and request information about it; learn the purpose of
+              the processing and whether the data is used for that purpose; know
               the third parties in Türkiye or abroad to whom it is transferred;
               ask for incomplete or inaccurate data to be corrected and, under
               the conditions of the law, for it to be deleted or destroyed, and
-              for these actions to be notified to those third parties; object
-              to a result against you that arises only from automated analysis;
-              and claim compensation for damage caused by unlawful processing.
+              for these actions to be notified to those third parties; object to
+              a result against you that arises only from automated analysis; and
+              claim compensation for damage caused by unlawful processing.
             </p>
+            <p><strong>How to apply</strong></p>
             <p>
-              Our service providers process data outside Türkiye, as described
-              in the service providers section above. Send requests to
+              Delete your leaderboard data in the game with
+              <strong>Settings → Leave the ranking and delete my data</strong>.
+              For any other request, email
               <a
                 href="mailto:dogukangamesdev@gmail.com?subject=Goalbreaker%20privacy%20request"
                 >dogukangamesdev@gmail.com</a
               >
-              with the subject “Goalbreaker privacy request”. We answer within
-              30 days at the latest and free of charge, unless answering
-              involves an additional cost under the fee schedule of the Personal
-              Data Protection Board (Kişisel Verileri Koruma Kurulu). If we
-              refuse your request, you find our answer insufficient or we do not
-              answer in time, you may complain to the Board within the periods
-              set by the law.
+              with the subject “Goalbreaker privacy request” (for the
+              leaderboard, include your ranking code), or send a written
+              application to [ADRES ya da KEP], by KEP or with a secure
+              electronic signature. You can write in Turkish, and we answer in
+              Turkish. We answer within 30 days at the latest and free of charge,
+              unless answering involves an additional cost under the fee schedule
+              of the Personal Data Protection Board (Kişisel Verileri Koruma
+              Kurulu). If we refuse your request, you find our answer
+              insufficient or we do not answer in time, you may complain to the
+              Board within the periods set by the law.
             </p>
           </section>
           <section id="children">
-            <h2><span class="section-index">12</span>Children’s privacy</h2>
+            <h2><span class="section-index">13</span>Children’s privacy</h2>
             <p>
               Goalbreaker is intended for players aged 13 and over and is not
               directed at children under 13. We do not knowingly collect
@@ -765,9 +1257,7 @@
               (under 13, 13 to 15, or 16 and over) is kept on your device; your
               exact age or birth year is not stored. If you answered in an
               earlier version, you are not asked again.
-              If you are under 16, play statistics and crash reports stay off
-              and are not offered, and the game asks Google’s ad service to
-              apply the child protections described in the advertising section.
+              If you are under 16, play statistics and crash reports stay off and are not offered, you cannot join the leaderboard, and the game asks Google’s ad service to apply the child protections described in the advertising section. Players aged 13 to 15 can view the leaderboard without sending any leaderboard ID, nickname or score; the game shows them only nicknames we have reviewed. If you answered that you are under 13, the game does not show the leaderboard and sends no leaderboard request of any kind. If you are 16 or 17, we suggest you talk to a parent or guardian before joining.
               That setting tells the ad service that the protections apply;
               neither your age nor your age range itself is sent to us or our
               providers; only the under-16 protection setting reaches the ad
@@ -787,7 +1277,7 @@
           </section>
           <section id="website">
             <h2>
-              <span class="section-index">13</span>Privacy on this website
+              <span class="section-index">14</span>Privacy on this website
             </h2>
             <p>
               This website uses no analytics scripts, advertising trackers,
@@ -813,7 +1303,7 @@
             </p>
           </section>
           <section id="changes">
-            <h2><span class="section-index">14</span>Changes to this policy</h2>
+            <h2><span class="section-index">15</span>Changes to this policy</h2>
             <p>
               We may update this policy when the game, its services or
               applicable requirements change. The current version will remain
