@@ -81,14 +81,17 @@
       </div>
       <div class="data-detail">
         <p>
-          <strong>What changed on 19 November 2026:</strong> version 1.3.0
-          adds an optional leaderboard (<a href="#leaderboard">section 07</a>)
-          and, on iPhone, a check for a newer game version
-          (<a href="#updates">section 05</a>). We rewrote the Türkiye section,
-          with a Turkish information notice
+          <strong>What changed with version 1.5.0:</strong> the game can show
+          optional reminder notifications
+          (<a href="#reminders">section 02</a>) and asks the store for its own
+          rating window (<a href="#rating">section 02</a>). Joining the
+          leaderboard is one tap on a card with a ready-made nickname, and you
+          can choose a profile picture from a fixed set that appears next to
+          your row (<a href="#leaderboard">section 07</a>). The leaderboard is
+          also view-only in Russia and Vietnam. The Turkish information notice
           (<a href="../../tr/goalbreaker/aydinlatma-metni/" hreflang="tr"
             >Aydınlatma Metni</a
-          >).
+          >) says the same.
         </p>
       </div>
       <section class="privacy-summary summary-quad" aria-label="Privacy at a glance">
@@ -98,7 +101,7 @@
           <p>
             No cloud save. If you are 16 or over and join the optional
             leaderboard, it creates an anonymous ID and shows your nickname,
-            kit and scores (section 07).
+            kit, profile picture and scores (section 07).
           </p>
         </div>
         <div>
@@ -106,7 +109,8 @@
           ><strong>Optional means opt-in.</strong>
           <p>
             Sending play statistics and crash reports is optional. Choose each
-            separately in version 1.0.3 and later.
+            separately in version 1.0.3 and later. From version 1.5.0,
+            reminders stay off until you turn them on.
           </p>
         </div>
         <div>
@@ -128,8 +132,9 @@
           <p>
             Players aged 16 and over can join with a nickname. Players aged 13
             to 15 can only watch; under 13, there is no leaderboard. In the EEA,
-            the UK and Switzerland it is view-only. Leave and delete your
-            leaderboard data in Settings.
+            the UK and Switzerland, and from version 1.5.0 in Russia and
+            Vietnam, it is view-only. Leave and delete your leaderboard data
+            in Settings.
           </p>
         </div>
       </section>
@@ -198,10 +203,10 @@
               <span class="section-index">02</span>Your game, on your device
             </h2>
             <p>
-              Goalbreaker does not require a player account. It stores your level progress, stars, coins, gems, unlocked items, trophies, daily rewards, preferences and the totals it counts for the leaderboard in the app’s local storage. We do not upload your save file to a game server or provide our own cloud-save service. If you are 16 or over and join the optional leaderboard, the game sends a nickname, your kit and your scores to our leaderboard database; <a href="#leaderboard">section 07</a> explains what it sends and how to delete it.
+              Goalbreaker does not require a player account. It stores your level progress, stars, coins, gems, unlocked items, trophies, daily rewards, preferences, the profile picture you chose, your history of weekly leaderboard rewards and the totals it counts for the leaderboard in the app’s local storage. We do not upload your save file to a game server or provide our own cloud-save service. If you are 16 or over and join the optional leaderboard, the game sends a nickname, your kit, the profile picture you chose and your scores to our leaderboard database; <a href="#leaderboard">section 07</a> explains what it sends and how to delete it.
             </p>
             <p>
-              <strong>Settings → Reset progress</strong> clears local game progress. It does not clear the leaderboard totals the game keeps on your device or your leaderboard identity, and it does not delete your leaderboard entries; use <strong>Settings → Leave the ranking and delete my data</strong> for that (<a href="#leaderboard">section 07</a>). Uninstalling the app normally removes its local storage,
+              <strong>Settings → Reset progress</strong> clears local game progress. It does not clear the leaderboard totals the game keeps on your device, your profile picture, your history of weekly leaderboard rewards or your leaderboard identity, and it does not delete your leaderboard entries; use <strong>Settings → Leave the ranking and delete my data</strong> for that (<a href="#leaderboard">section 07</a>). Uninstalling the app normally removes its local storage,
               but your operating system may retain or restore app data through
               device backups. Backups are controlled by your device settings and
               platform provider. From version 1.0.4 on Android, the game limits
@@ -221,6 +226,43 @@
               us. On Android, the one-time in-game reward for opening the page
               is kept with your local progress; the iPhone version gives no
               reward for opening the page.
+            </p>
+            <h3 id="reminders">Reminders (from version 1.5.0)</h3>
+            <p>
+              From version 1.5.0 the game can remind you of your daily reward,
+              full lives, the weekly leaderboard race and the level you left.
+              Reminders are for players aged 13 and over and are off until you
+              say yes. The game asks once, on a card shown after you have taken
+              your second daily reward, never when it starts. Only if you answer
+              yes does the game ask your phone’s system for permission to show
+              notifications. You can switch reminders off, or on again, at any
+              time in <strong>Settings → Reminders</strong>, or block them in
+              your phone’s notification settings. The weekly-race reminder is
+              for players who have joined the leaderboard.
+            </p>
+            <p>
+              Reminders are local notifications. When the game goes to the
+              background it schedules them on your device from your progress
+              and cancels them when you come back; on Android it also asks the
+              system to keep them after a restart. There is no push service
+              and no push token, no server of ours sends them, and the
+              reminders and their times are not sent anywhere. Only if you have
+              turned on play statistics (<a href="#usage-data">section 03</a>)
+              does the game also record your answer to the reminder question and
+              which kind of reminder (daily reward, lives, weekly race or return)
+              opened it.
+            </p>
+            <h3 id="rating">Asking for a rating (from version 1.5.0)</h3>
+            <p>
+              From version 1.5.0 the game can ask Google Play (on Android) or
+              the App Store (on iPhone) to show the store’s own rating window
+              after a good moment in the game, such as a clean three-star win,
+              your first boss win or the end of Smash &amp; Score: each moment
+              at most once, and never more often than every 30 days. The window
+              belongs to the store. Google or Apple decides whether to show it
+              and takes any rating or review under its own terms and privacy
+              policy. The game is not told whether the window appeared or what
+              you rated, and keeps on your device only when it last asked.
             </p>
           </section>
           <section id="usage-data">
@@ -261,6 +303,14 @@
                 advertising personalisation for this analytics integration. On
                 iOS, it also turns off collection of the identifier for vendor
                 (IDFV).
+              </p>
+              <p>
+                From version 1.5.0 the events also include your answer to the
+                reminder question and which kind of reminder opened the game;
+                and, for the leaderboard join card, that it was shown, where you
+                opened it from and whether you joined, changed the suggested
+                nickname or chose not now. These events never carry your
+                nickname, your leaderboard ID or the text of a reminder.
               </p>
               <p>
                 Gameplay events generated before you enable analytics are not
@@ -558,7 +608,8 @@
               </li>
               <li>
                 In the European Economic Area, the United Kingdom and
-                Switzerland, the leaderboard is view-only: you cannot join, no
+                Switzerland and, from version 1.5.0, Russia and Vietnam, the
+                leaderboard is view-only: you cannot join, no
                 leaderboard identity is created, the game sends nothing about
                 you, and nicknames are not shown (each row reads “Player” with a
                 four-digit number, such as “Player 1234”, which your device
@@ -570,18 +621,33 @@
                 setting. If any available signal names one of these countries,
                 or no signal is available, the leaderboard is view-only. The
                 game reads these signals on your device, keeps them in memory
-                only, and never stores or sends them. If we open the leaderboard
-                in these regions later, we will update this policy first.
+                only, and never stores or sends them. If you joined from Russia
+                or Vietnam with an earlier version, your game sends no new
+                scores from version 1.5.0; your entries stay in the tables until
+                you delete them (see below) or they expire under the retention
+                periods below. If we open the leaderboard in these regions
+                later, we will update this policy first.
               </li>
             </ul>
             <p>
-              Before you can type a nickname, the game shows a summary of the
-              leaderboard rules with links to the full
+              From version 1.5.0, you join with one tap on a card. The card
+              shows a ready-made nickname, says what goes to the leaderboard and
+              that it is public, how to leave, and links to the full
               <a href="../leaderboard-rules/">leaderboard rules</a> and to this
-              section. You join by ticking “I accept the ranking rules”, a box
-              that starts unticked. Ticking it accepts the rules of the
-              leaderboard, the terms on which we run it for you; it is not a
-              consent to this policy.
+              section. Until you tap JOIN, the suggested nickname stays on your
+              device and nothing is sent; NOT NOW, going back or tapping outside
+              the card means no, and the game then does not show the card again
+              by itself (you can open it from the ranking screen or your
+              profile). You can change the nickname on the card first. Tapping
+              JOIN accepts the rules of the leaderboard, the terms on which we
+              run it for you; it is not a consent to this policy.
+            </p>
+            <p>
+              In versions 1.3.0 and 1.4.0, and where the game shows the rules
+              page instead (for example to accept changed rules), the game shows
+              a summary of the rules before you can type a nickname, with the
+              same links. You join by ticking “I accept the ranking rules”, a
+              box that starts unticked, with the same effect.
             </p>
             <div class="data-detail">
               <h3>What the leaderboard stores, and who can read it</h3>
@@ -602,6 +668,11 @@
                   filtering and search, and whether we have reviewed it;
                 </li>
                 <li>the ID of the kit your player wears;</li>
+                <li>
+                  from version 1.5.0, if you chose one, the ID of your profile
+                  picture: a picture from the game’s fixed set of 12 made by the
+                  studio, never an image you provide;
+                </li>
                 <li>
                   your weekly and all-time scores for stars, levels and trophy
                   points, and, behind the trophy points, the six weekly trophy
@@ -632,7 +703,7 @@
               </ul>
               <p>
                 Everything in this list is public. Other players see your
-                nickname, kit, scores and rank in the game; the weekly winner of
+                nickname, kit, profile picture, scores and rank in the game; the weekly winner of
                 each table shows a crown for one week. Anyone who reads the
                 leaderboard database directly, outside the game, can read every
                 item in the list. Do not put personal information, such as your
@@ -698,7 +769,12 @@
               When you set a nickname, the game and the database check it
               automatically against character rules and a list of blocked words;
               a nickname that passes appears straight away. You can change your
-              nickname once a day. Every other moderation decision is made by a
+              nickname once a day; a ready-made nickname the game suggested can
+              be changed once straight away. Ready-made nicknames come from a
+              fixed list of a football word and four digits, and the database
+              recognises them from that list, so they count as reviewed.
+              Profile pictures are not reviewed because they all come from the
+              game’s fixed set. Every other moderation decision is made by a
               person, the developer, on a moderation page that only the developer
               can open: renaming a nickname and locking it, removing a player
               from a week’s tables, and banning a leaderboard identity. A banned
@@ -736,7 +812,7 @@
               <a href="../leaderboard-rules/">leaderboard rules</a>). Taking part
               is free, and rewards have no cash value and cannot be exchanged for
               money. To pay rewards, the game reads the top of each weekly table;
-              it records collected rewards in your progress file on your device.
+              it records collected rewards in your progress file on your device, and from version 1.5.0 your profile page shows your past weekly rewards from that record.
             </p>
             <div class="data-detail">
               <h3>Leaving and deleting your leaderboard data</h3>
@@ -900,7 +976,7 @@
               international processing
             </h2>
             <p>
-              We use Google’s Firebase services for optional analytics and crash reporting and, from version 1.3.0, Firebase Authentication and Cloud Firestore for the optional leaderboard; Google AdMob, its advertising partners and the companies that bid through AdMob mediation for ads; Google Play for Android distribution, updates and purchases; Apple’s App Store for iOS distribution, purchases (from version 1.2.1) and, from version 1.3.0, the update check; Gmail for support; and GitHub Pages for this
+              We use Google’s Firebase services for optional analytics and crash reporting and, from version 1.3.0, Firebase Authentication and Cloud Firestore for the optional leaderboard; Google AdMob, its advertising partners and the companies that bid through AdMob mediation for ads; Google Play for Android distribution, updates, purchases and, from version 1.5.0, the store’s own rating window; Apple’s App Store for iOS distribution, purchases (from version 1.2.1), from version 1.3.0 the update check and, from version 1.5.0, the store’s own rating window; Gmail for support; and GitHub Pages for this
               website. Test versions 1.0.0 to 1.0.3 also used
               Unity Technologies for engine diagnostics. Each
               receives the information needed for the relevant service. We share information only with these providers, except the leaderboard entries you choose to publish by joining, which other players and anyone who reads the leaderboard can see (<a href="#leaderboard">section 07</a>). We expect these providers to protect it to the same or an equal standard as this policy describes and
@@ -1037,13 +1113,24 @@
                 <strong>Leaderboard</strong>
                 <p>
                   Joining is optional and only for players aged 16 and over
-                  outside the EEA, the UK and Switzerland.
+                  outside the EEA, the UK and Switzerland and, from version 1.5.0,
+                  Russia and Vietnam.
                   <strong>Settings → Leave the ranking and delete my
                   data</strong> removes your entries, your nickname and your
                   leaderboard identity; it stays available whenever your game
                   holds a leaderboard identity (<a href="#leaderboard">section 07</a>).
                   Hidden players can be shown again in
                   <strong>Settings → Show hidden players</strong>.
+                </p>
+              </li>
+              <li>
+                <strong>Reminders</strong>
+                <p>
+                  From version 1.5.0, switch reminders on or off in
+                  <strong>Settings → Reminders</strong>
+                  (<a href="#reminders">section 02</a>); you can also block
+                  them in your phone’s notification settings. Nothing is
+                  scheduled while they are off.
                 </p>
               </li>
               <li>

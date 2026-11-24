@@ -96,7 +96,7 @@
             <p class="eyebrow">On this page</p>
             <ol>
               <li><a href="#who">Who can take part</a></li>
-              <li><a href="#nickname">Your nickname</a></li>
+              <li><a href="#nickname">Your nickname and picture</a></li>
               <li><a href="#scores">How scores are counted</a></li>
               <li><a href="#rewards">Weekly rewards</a></li>
               <li><a href="#reporting">Reporting and hiding</a></li>
@@ -117,10 +117,16 @@
           <div class="data-detail">
             <p>
               These rules apply to the RANKING leaderboard in Goalbreaker
-              version 1.3.0 and later. Before you can type a nickname, the game
-              asks you to tick “I accept the ranking rules”; the box starts
-              unticked. By ticking it you agree to these rules: they are the
-              terms on which we run the leaderboard for you. How we handle
+              version 1.3.0 and later. From version 1.5.0, joining is one tap:
+              the game shows a card with a ready-made nickname, what is sent and
+              links to these rules, and tapping JOIN accepts these rules.
+              Nothing is sent before you tap JOIN; NOT NOW, going back or
+              tapping outside the card means no. In versions 1.3.0 and 1.4.0,
+              and in the cases where the game shows the rules page instead (for
+              example to accept changed rules), it asks you to tick “I accept
+              the ranking rules” before you can type a nickname; the box starts
+              unticked. Either way, accepting means you agree to these rules:
+              they are the terms on which we run the leaderboard for you. How we handle
               leaderboard data is explained in the
               <a href="../privacy/#leaderboard">privacy policy</a> and, in Turkish, in our
               <a href="../../tr/goalbreaker/aydinlatma-metni/" hreflang="tr"
@@ -147,8 +153,8 @@
               </li>
               <li>
                 In the European Economic Area, the United Kingdom and
-                Switzerland, the leaderboard is view-only for now: nobody there
-                can join, the game sends nothing about the player, and nicknames
+                Switzerland and, from version 1.5.0, Russia and Vietnam, the
+                leaderboard is view-only for now: nobody there can join, the game sends nothing about the player, and nicknames
                 are not shown: rows read “Player 1234”, a four-digit number your
                 device derives only for display, which does not identify the
                 player. The game decides this on your device from device signals
@@ -157,7 +163,10 @@
                 device’s region setting. If any available signal names one of
                 these countries, or no signal is available, the leaderboard is
                 view-only. The signals are kept in memory only, never stored and
-                never sent.
+                never sent. If you joined from Russia or Vietnam with an earlier
+                version, from version 1.5.0 your game sends no new scores; your
+                entries stay in the tables until you delete them
+                (<a href="#delete">section 8</a>) or they expire, and the delete control stays available.
               </li>
               <li>
                 You need an internet connection to see the tables and to send
@@ -170,7 +179,7 @@
             </ul>
           </section>
           <section id="nickname">
-            <h2><span class="section-index">02</span>Your nickname</h2>
+            <h2><span class="section-index">02</span>Your nickname and picture</h2>
             <ul>
               <li>
                 3 to 16 characters: letters A–Z, Turkish letters (Ç Ğ İ Ö Ş Ü ç
@@ -183,7 +192,17 @@
               </li>
               <li>
                 You can change your nickname once a day (24 hours after the last
-                change).
+                change). A ready-made nickname suggested by the game (see
+                below) can be changed once straight away, if you have not
+                changed it before.
+              </li>
+              <li>
+                From version 1.5.0 the game suggests a ready-made nickname on
+                the join card: a word from a fixed list of football words and
+                four digits, such as “Striker4821”. Other players can get the
+                same one. It is sent only when you tap JOIN, and you can change
+                it before that, on the card, or afterwards from your profile or
+                the ranking screen.
               </li>
               <li>
                 Your nickname is shown to everyone. Do not use your full real
@@ -191,7 +210,23 @@
                 link or social media handle.
               </li>
             </ul>
-            <p><strong>Not allowed, with zero tolerance:</strong></p>
+            <h3>Your profile picture</h3>
+            <ul>
+              <li>
+                From version 1.5.0 you can choose a profile picture on the
+                game’s profile page. It comes from a fixed set of 12 pictures
+                made by the studio; some unlock by playing. You cannot upload
+                images.
+              </li>
+              <li>
+                If you have joined and chosen a picture, the game sends its
+                identifier and the ranking shows the picture next to your row,
+                in every table, to everyone who sees the ranking, in the same
+                way as your kit. Without a chosen picture, your kit is shown.
+                Leaving the ranking removes the picture with your other entries.
+              </li>
+            </ul>
+            <p><strong>Not allowed in a nickname, with zero tolerance:</strong></p>
             <ul>
               <li>
                 insults, hate or harassment aimed at a person or a group,
@@ -230,7 +265,7 @@
               </li>
               <li>
                 <strong>Level:</strong> the number of different levels in which
-                you scored a goal this week, in any mode (at most 221).
+                you scored a goal this week, in any mode (at most 271).
               </li>
               <li>
                 <strong>Trophies:</strong> your trophy points (KP) this week,
@@ -395,7 +430,10 @@
                 When you set a nickname, the game and the server check it
                 automatically against the character rules and a list of blocked
                 words. A blocked name is refused at once; a name that passes
-                appears straight away. No filter catches everything.
+                appears straight away. No filter catches everything. A
+                ready-made nickname from the game’s fixed list is checked in
+                advance and counts as reviewed. Profile pictures need no review:
+                they all come from the fixed set.
               </li>
               <li>
                 Every other decision is made by a person, the developer:
@@ -520,7 +558,7 @@
             <ul>
               <li>
                 <strong>At once:</strong> your entries leave every table and
-                your nickname and scores are removed; then your anonymous ranking
+                your nickname, profile picture and scores are removed; then your anonymous ranking
                 identity is deleted.
               </li>
               <li>

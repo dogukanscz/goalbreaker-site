@@ -156,7 +156,10 @@
               kupaların, günlük ödüllerin ve tercihlerin; yaş aralığın (13
               altı, 13–15 ya da 16 ve üstü; kesin yaşın ve doğum yılın
               saklanmaz); sıralama için sayılan toplamlar, gizlediğin oyuncular
-              ve kabul ettiğin sıralama kuralları sürümü. Bunlar oyunun
+              ve kabul ettiğin sıralama kuralları sürümü; 1.5.0 sürümünden
+              itibaren seçtiğin profil resmi, ulaştığın en yüksek seviye,
+              aldığın haftalık sıralama ödüllerinin geçmişi ve hatırlatma
+              tercihin. Bunlar oyunun
               çalışması için cihazında tutulur. Cihazının yedekleri (Android
               yedeği, iCloud ya da bilgisayar yedeği) bunları taşıyabilir.
             </p>
@@ -172,7 +175,12 @@
               cihaz ve işletim sistemi bilgisi, dil, uygulama örneği
               tanımlayıcısı, Google Play yükleme yönlendirme bilgisi (yalnız
               Android) ve IP adresinden çıkarılan yaklaşık konum (şehir, bölge,
-              ülke). Analiz açıkken Firebase tamamlanan bir Google Play satın
+              ülke); 1.5.0 sürümünden itibaren hatırlatma sorusuna cevabın ve
+              oyunu hangi tür hatırlatmanın açtığı, ayrıca sıralama katılım
+              kartının gösterildiği, nereden açıldığı ve katılıp katılmadığın,
+              önerilen takma adı değiştirip değiştirmediğin ya da şimdi değil
+              deyip demediğin. Takma adın, sıralama kimliğin ve hatırlatma
+              metni bu olaylara girmez. Analiz açıkken Firebase tamamlanan bir Google Play satın
               almasını ürün, fiyat ve para birimiyle kendisi kaydeder. Sıralama
               takma adını ya da sıralama kimliğini eklemeyiz; reklam kimliği
               toplanmaz.
@@ -228,8 +236,9 @@
                 sıralamaya hiçbir istek göndermez.
               </li>
               <li>
-                Avrupa Ekonomik Alanı’nda, Birleşik Krallık’ta ve İsviçre’de
-                sıralama yalnız izlenir: katılamazsın, sıralama kimliği
+                Avrupa Ekonomik Alanı’nda, Birleşik Krallık’ta, İsviçre’de ve
+                1.5.0 sürümünden itibaren Rusya’da ve Vietnam’da sıralama yalnız
+                izlenir: katılamazsın, sıralama kimliği
                 oluşmaz, seninle ilgili hiçbir şey gönderilmez ve takma adlar
                 gösterilmez. Satırlar “Oyuncu 1234” gibi okunur: dört haneli
                 sayıyı cihazın yalnız gösterim için türetir, oyuncuyu tanıtmaz;
@@ -240,9 +249,29 @@
                 sinyallerden biri bu ülkelerden birini gösterirse ya da hiç
                 sinyal yoksa sıralama yalnız izlenir. Bu sinyaller cihazında
                 okunur, yalnız bellekte tutulur, hiç saklanmaz ve bize
-                gönderilmez.
+                gönderilmez. Rusya’dan ya da Vietnam’dan önceki bir sürümle
+                katıldıysan oyun 1.5.0 sürümünden itibaren yeni puan göndermez;
+                kayıtların sen silene ya da saklama süreleri dolana kadar
+                tablolarda kalır (aşağıya bak).
               </li>
             </ul>
+            <p>
+              <strong>Nasıl katılırsın:</strong> 1.5.0 sürümünden itibaren oyun
+              bir kart gösterir: hazır bir takma ad, sıralamaya nelerin gittiği
+              ve bunların herkese açık olduğu, nasıl ayrılacağın ve sıralama
+              kurallarıyla bu metne bağlantılar. KATIL’a dokunana kadar önerilen
+              takma ad yalnız cihazında durur ve hiçbir şey gönderilmez; ŞİMDİ
+              DEĞİL, geri dönmek ya da kartın dışına dokunmak “hayır” demektir
+              ve oyun kartı kendiliğinden bir daha göstermez (sıralama
+              ekranından ya da profilinden açabilirsin). KATIL’a dokunmak
+              sıralama kurallarını kabul etmek demektir. 1.3.0 ve 1.4.0
+              sürümlerinde ve oyunun kart yerine kurallar sayfasını gösterdiği
+              durumlarda katılmak için “Sıralama kurallarını kabul ediyorum”
+              kutusunu işaretlersin; etkisi aynıdır. Hazır takma ad, sabit bir
+              futbol sözcüğü listesinden bir sözcük ve dört rakamdan oluşur
+              (örneğin “Golcü4821”); sunucu onu bu listeden tanır ve incelenmiş
+              sayar.
+            </p>
             <p><strong>Katılırsan herkese açık olanlar:</strong></p>
             <ul>
               <li>
@@ -250,6 +279,11 @@
                 kopyası ve takma adı inceleyip incelemediğimiz;
               </li>
               <li>oyuncunun giydiği formanın kimliği;</li>
+              <li>
+                1.5.0 sürümünden itibaren, seçtiysen profil resminin kimliği:
+                stüdyonun hazırladığı 12 resimlik sabit setten bir resim;
+                kendi görselini yükleyemezsin;
+              </li>
               <li>
                 haftalık ve tüm zamanlar yıldız, seviye ve kupa puanların; kupa
                 puanının dayandığı altı haftalık kupa basamağı ve koleksiyonunda
@@ -280,7 +314,7 @@
             </ul>
             <p>
               Bunların hepsi herkese açıktır: diğer oyuncular oyunda takma
-              adını, formanı, puanlarını ve sıranı görür; veritabanını oyunun
+              adını, formanı, profil resmini, puanlarını ve sıranı görür; veritabanını oyunun
               dışından doğrudan okuyan biri listedeki her şeyi okuyabilir. Takma
               adına tam adını, telefonunu, adresini ya da sosyal medya
               kullanıcı adını yazma.
@@ -318,6 +352,28 @@
               politikasına göre görür. Bize hiçbir şey gelmez. Çıkan pencereyi
               kapatabilirsin; SONRA dersen aynı sürüm için 3 gün yeniden
               gösterilmez.
+            </p>
+            <h3>3.9 Hatırlatmalar ve mağaza puan penceresi</h3>
+            <p>
+              1.5.0 sürümünden itibaren, 13 yaş ve üstüysen ve “evet” dersen oyun
+              günlük ödül, dolan canlar, haftalık sıralama yarışı ve bıraktığın
+              seviye için hatırlatma bildirimi gösterebilir. Hatırlatmalar
+              cihazında zamanlanır ve cihazında gösterilir; anlık bildirim (push)
+              hizmeti ya da cihaz belirteci (token) kullanılmaz, bizim hiçbir
+              sunucumuz hatırlatma göndermez, hatırlatmalar ve zamanları hiçbir
+              yere gönderilmez ve bize hiçbir şey gelmez. Bildirim izni yalnız
+              “evet”ten sonra, telefonunun sistem penceresinde istenir; Ayarlar
+              → Hatırlatmalar’dan ya da telefonunun bildirim ayarlarından
+              kapatabilirsin. Yalnız analizi açtıysan bu sorunun cevabı ve oyunu
+              hangi tür hatırlatmanın açtığı 3.2’deki gibi kaydedilir.
+            </p>
+            <p>
+              Oyun ayrıca belirli başarı anlarında Google Play’den (Android) ya
+              da App Store’dan (iPhone) mağazanın kendi puan penceresini
+              göstermesini isteyebilir. Pencereyi mağaza gösterir; puanı ve
+              yorumu Google ya da Apple kendi koşullarına göre alır. Oyun
+              pencerenin gösterilip gösterilmediğini ve verdiğin puanı öğrenmez;
+              yalnız son isteğin zamanını cihazında tutar.
             </p>
           </section>
           <section id="amaclar">
@@ -388,7 +444,8 @@
                 yasak ve silme işaretlerini tutmak ayrıca bir hakkın tesisi,
                 kullanılması veya korunması için gerekli olabilir (md. 5/2-e).
                 Sıralama için açık rızana dayanmayız: katılırken işaretlediğin
-                kutu sıralama kurallarını kabul ettiğin anlamına gelir.
+                kutu (1.5.0 sürümünden itibaren KATIL’a dokunman) sıralama
+                kurallarını kabul ettiğin anlamına gelir.
               </li>
               <li>
                 <strong>Reklamlar:</strong> Oyunu ücretsiz
@@ -651,6 +708,12 @@
             <p>
               Sürüm 1 · 19 Kasım 2026: ilk Türkçe aydınlatma metni; 1.3.0
               sıralaması ve iPhone güncelleme sorgusu dahil.
+            </p>
+            <p>
+              1.5.0 sürümüyle birlikte: tek dokunuşla katılım ve hazır takma
+              ad (3.7), sıralamaya giden profil resmi kimliği (3.7), Rusya ve
+              Vietnam’ın yalnız izleme listesine eklenmesi (3.7), hatırlatmalar
+              ve mağaza puan penceresi (3.9).
             </p>
           </section>
           <a class="text-link back-top" href="#main"
